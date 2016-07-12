@@ -29,9 +29,9 @@ public class SearchWeatherPage extends PageObject {
         Actions builder = new Actions(getDriver());
         builder.moveToElement(getDriver().findElement(By.id("location_autocomplete"))).perform();
         String s = getDriver().findElement(By.xpath(".//span[@class='autoCompleteHighlight']")).getText();
-        Assert.assertSame(s, capital);
+        Assert.assertEquals(s, capital);
         String s1 = getDriver().findElement(By.xpath(".//span[@class='cntry']")).getText();
-        Assert.assertSame(s1, country);
+        Assert.assertEquals(s1, country);
         Assert.assertNotNull("flag present", getDriver().findElement(By.xpath(".//nobr/div[contains(@class, 'flag')]")));
     }
 

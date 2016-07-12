@@ -1,0 +1,59 @@
+<xref>
+  <whenMade>1468357251505</whenMade>
+  <createdBy>JBehave</createdBy>
+  <metaFilter>-ignore</metaFilter>
+  <meta/>
+  <stories>
+    <story>
+      <description>Lookup a definition</description>
+      <narrative>In order to talk better
+As a n English student
+I want to look up word definitions
+</narrative>
+      <name>LookupADefinition.story</name>
+      <path>stories/consult_dictionary/LookupADefinition.story</path>
+      <html>stories.consult_dictionary.LookupADefinition.html</html>
+      <meta></meta>
+      <scenarios>Scenario:Looking up the definition of &apos;apple&apos;
+Given the user is on the Wikionary home page
+When the user looks up the definition of the word &apos;apple&apos;
+Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;
+
+
+Scenario:Looking up the definition of &apos;pear&apos;
+Given the user is on the Wikionary home page
+When the user looks up the definition of the word &apos;pear&apos;
+Then they should see the definition &apos;An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.&apos;
+
+
+</scenarios>
+      <passed>true</passed>
+      <pending>false</pending>
+      <started>1468357137407</started>
+      <duration>47426</duration>
+    </story>
+    <story>
+      <description></description>
+      <narrative>In order to 
+As a traveler
+I want to check the weather
+</narrative>
+      <name>CheckWeatherInSpecificCity.story</name>
+      <path>stories/check_weather/CheckWeatherInSpecificCity.story</path>
+      <html>stories.check_weather.CheckWeatherInSpecificCity.html</html>
+      <meta></meta>
+      <scenarios>Scenario:checking weather in capitals
+Given the user is on the Weather Forecast home page
+When user enters &lt;capital&gt;
+Then dropdown should be shown along with corresponding &lt;capital&gt; and &lt;country&gt;
+
+
+</scenarios>
+      <passed>false</passed>
+      <pending>false</pending>
+      <started>1468357186135</started>
+      <duration>60281</duration>
+    </story>
+  </stories>
+  <stepMatches/>
+</xref>

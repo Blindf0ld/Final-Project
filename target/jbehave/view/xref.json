@@ -1,0 +1,35 @@
+{"xref": {
+  "whenMade": 1468357251505,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "Lookup a definition",
+      "narrative": "In order to talk better\nAs a n English student\nI want to look up word definitions\n",
+      "name": "LookupADefinition.story",
+      "path": "stories/consult_dictionary/LookupADefinition.story",
+      "html": "stories.consult_dictionary.LookupADefinition.html",
+      "meta": "",
+      "scenarios": "Scenario:Looking up the definition of 'apple'\nGiven the user is on the Wikionary home page\nWhen the user looks up the definition of the word 'apple'\nThen they should see the definition 'A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.'\n\n\nScenario:Looking up the definition of 'pear'\nGiven the user is on the Wikionary home page\nWhen the user looks up the definition of the word 'pear'\nThen they should see the definition 'An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.'\n\n\n",
+      "passed": true,
+      "pending": false,
+      "started": 1468357137407,
+      "duration": 47426
+    },
+    {
+      "description": "",
+      "narrative": "In order to \nAs a traveler\nI want to check the weather\n",
+      "name": "CheckWeatherInSpecificCity.story",
+      "path": "stories/check_weather/CheckWeatherInSpecificCity.story",
+      "html": "stories.check_weather.CheckWeatherInSpecificCity.html",
+      "meta": "",
+      "scenarios": "Scenario:checking weather in capitals\nGiven the user is on the Weather Forecast home page\nWhen user enters <capital>\nThen dropdown should be shown along with corresponding <capital> and <country>\n\n\n",
+      "passed": false,
+      "pending": false,
+      "started": 1468357186135,
+      "duration": 60281
+    }
+  ],
+  "stepMatches": []
+}}

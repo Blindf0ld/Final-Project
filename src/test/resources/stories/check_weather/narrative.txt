@@ -1,0 +1,4 @@
+Check weather in capital
+In order to know what the weather is in specific city
+As a user
+I want to be able to check it on the web-site beforehand

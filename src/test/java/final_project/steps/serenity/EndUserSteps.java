@@ -1,6 +1,7 @@
 package final_project.steps.serenity;
 
 import final_project.pages.DictionaryPage;
+import final_project.pages.SearchWeatherPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
@@ -11,6 +12,7 @@ import static org.hamcrest.Matchers.hasItem;
 public class EndUserSteps extends ScenarioSteps {
 
     DictionaryPage dictionaryPage;
+    SearchWeatherPage searchWeatherPage;
 
     @Step
     public void enters(String keyword) {
@@ -36,5 +38,25 @@ public class EndUserSteps extends ScenarioSteps {
     public void looks_for(String term) {
         enters(term);
         starts_search();
+    }
+
+    @Step
+    public void enter_city(String city){
+        searchWeatherPage.enter_word(city);
+    }
+
+    @Step
+    public void search(){
+        searchWeatherPage.search_perform();
+    }
+
+    @Step
+    public void open_weather_page(){
+        searchWeatherPage.open();
+    }
+
+    @Step
+    public void check_dropdown_list(String city, String country){
+        searchWeatherPage.check_presense_in_dropdown(city, country);
     }
 }

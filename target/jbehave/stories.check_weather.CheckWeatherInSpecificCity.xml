@@ -1,0 +1,44 @@
+<story path="stories/check_weather/CheckWeatherInSpecificCity.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">traveler</inOrderTo>
+  <asA keyword="I want to">check the weather</asA>
+  <iWantTo keyword="So that">I can prepare myself for everything</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="checking weather in capitals">
+<examples keyword="Examples:">
+<step>Given the user is on the Weather Forecast home page</step>
+<step>When user enters &lt;capital&gt;</step>
+<step>Then dropdown should be shown along with corresponding &lt;capital&gt; and &lt;country&gt;</step>
+<parameters>
+<names><name>capital</name><name>country</name></names>
+<values><value>Washington D.C.</value><value>United States</value></values>
+</parameters>
+
+<example keyword="Example:">{capital=Washington D.C., country=United States}</example>
+<step outcome="successful">Given the user is on the Weather Forecast home page</step>
+<step outcome="successful">When user enters <parameter>Washington D.C.</parameter></step>
+<step outcome="failed" keyword="FAILED">Then dropdown should be shown along with corresponding <parameter>Washington D.C.</parameter> and <parameter>United States</parameter><failure>java.lang.AssertionError: expected same:&lt;Washington D.C.&gt; was not:&lt;Washington D.C.&gt;</failure></step>
+</examples>
+<failure>java.lang.AssertionError: expected same:&lt;Washington D.C.&gt; was not:&lt;Washington D.C.&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotSame(Assert.java:828)
+	at org.junit.Assert.assertSame(Assert.java:771)
+	at org.junit.Assert.assertSame(Assert.java:782)
+	at final_project.pages.SearchWeatherPage.check_presense_in_dropdown(SearchWeatherPage.java:32)
+	at final_project.steps.serenity.EndUserSteps.check_dropdown_list(EndUserSteps.java:60)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$91520bcc.CGLIB$check_dropdown_list$8(&lt;generated&gt;)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$91520bcc$$FastClassByCGLIB$$57ee9d28.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$91520bcc.check_dropdown_list(&lt;generated&gt;)
+	at final_project.steps.SearchWeatherSteps.enteredCapitalCheckPresence(SearchWeatherSteps.java:30)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
+...</failure>
+</scenario>
+</story>

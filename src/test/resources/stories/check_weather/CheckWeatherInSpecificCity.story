@@ -11,3 +11,12 @@ Then dropdown should be shown along with corresponding <capital> and <country>
 Examples:
 capital|country
 Washington D.C.|United States
+Kiev|Ukraine
+Paris|France
+Helsinki|Finland
+Madrid|Spain
+Sidney|Australia
+Rome|Italy
+Warsaw|Poland
+Berlin|Germany
+Copenhagen|Denmark

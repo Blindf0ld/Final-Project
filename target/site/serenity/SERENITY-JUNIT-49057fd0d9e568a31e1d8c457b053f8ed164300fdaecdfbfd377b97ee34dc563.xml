@@ -1,5 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Check weather in specific city" skipped="0" tests="1" time="58.92" timestamp="2016-07-194 11:59:46"><testcase name="checking weather in capitals"><failure message="expected same:&lt;Washington D.C.&gt; was not:&lt;Washington D.C.&gt;" type="java.lang.AssertionError">expected same:&lt;Washington D.C.&gt; was not:&lt;Washington D.C.&gt;</failure><system-err>expected same:&lt;Washington D.C.&gt; was not:&lt;Washington D.C.&gt;&#13;
-final_project.pages.SearchWeatherPage.check_presense_in_dropdown(SearchWeatherPage.java:32)&#13;
-final_project.steps.serenity.EndUserSteps.check_dropdown_list(EndUserSteps.java:60)&#13;
-final_project.steps.SearchWeatherSteps.enteredCapitalCheckPresence(SearchWeatherSteps.java:30)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Check weather in specific city" skipped="0" tests="1" time="55.66" timestamp="2016-07-195 12:51:08"><testcase name="checking weather in capitals"/></testsuite>

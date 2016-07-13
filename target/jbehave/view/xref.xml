@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1468357251505</whenMade>
+  <whenMade>1468360326773</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -29,8 +29,8 @@ Then they should see the definition &apos;An edible fruit produced by the pear t
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1468357137407</started>
-      <duration>47426</duration>
+      <started>1468360224418</started>
+      <duration>43039</duration>
     </story>
     <story>
       <description></description>
@@ -49,10 +49,10 @@ Then dropdown should be shown along with corresponding &lt;capital&gt; and &lt;c
 
 
 </scenarios>
-      <passed>false</passed>
+      <passed>true</passed>
       <pending>false</pending>
-      <started>1468357186135</started>
-      <duration>60281</duration>
+      <started>1468360268145</started>
+      <duration>55670</duration>
     </story>
   </stories>
   <stepMatches/>

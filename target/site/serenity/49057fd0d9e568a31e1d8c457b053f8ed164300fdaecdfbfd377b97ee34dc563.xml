@@ -1,4 +1,4 @@
-<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="3" successful="2" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="58919" timestamp="2016-07-12T23:59:46.139+03:00" session-id="95f79155-feef-459c-8236-40aa53f1a781">
+<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="55662" timestamp="2016-07-13T00:51:08.149+03:00" session-id="211d8049-e87c-4bd4-9b92-67a848e9d7c2">
   <user-story id="CheckWeatherInSpecificCity" name="Check weather in specific city" path="stories/check_weather/CheckWeatherInSpecificCity.story"/>
   <tags>
     <tag name="Check weather" type="feature"/>
@@ -13,50 +13,48 @@
       <header>country</header>
     </headers>
     <rows>
-      <row result="FAILURE">
+      <row result="SUCCESS">
         <value>Washington D.C.</value>
         <value>United States</value>
       </row>
     </rows>
   </examples>
-  <test-group name="[1] {capital=Washington D.C., country=United States}" result="FAILURE">
+  <test-group name="[1] {capital=Washington D.C., country=United States}" result="SUCCESS">
     <test-group name="Given the user is on the Weather Forecast home page" result="SUCCESS">
       <screenshots>
-        <screenshot image="08343d75915f049107b3ec496a659d40.png"/>
+        <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="41621">
+      <test-step result="SUCCESS" duration="40548">
         <screenshots>
-          <screenshot image="08343d75915f049107b3ec496a659d40.png"/>
+          <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
         </screenshots>
         <description>Open weather page</description>
       </test-step>
     </test-group>
     <test-group name="When user enters {Washington D.C.}" result="SUCCESS">
       <screenshots>
-        <screenshot image="08343d75915f049107b3ec496a659d40.png"/>
-        <screenshot image="e34e816633554968c68f33cb0a2ee907.png"/>
+        <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
+        <screenshot image="94425a80110019a503c0a6cb68123d89.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="4800">
+      <test-step result="SUCCESS" duration="3927">
         <screenshots>
-          <screenshot image="08343d75915f049107b3ec496a659d40.png"/>
-          <screenshot image="e34e816633554968c68f33cb0a2ee907.png"/>
+          <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
+          <screenshot image="94425a80110019a503c0a6cb68123d89.png"/>
         </screenshots>
         <description>Enter city: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C.&lt;/span&gt;</description>
       </test-step>
     </test-group>
-    <test-group name="Then dropdown should be shown along with corresponding ｟Washington D.C.｠ and ｟United States｠" result="FAILURE">
+    <test-group name="Then dropdown should be shown along with corresponding {Washington D.C.} and {United States}" result="SUCCESS">
       <screenshots>
-        <screenshot image="f01858a99cb50be86b43858f62344d1b.png"/>
+        <screenshot image="e1b97993bb74d7a031910e3d5a52e21a.png"/>
+        <screenshot image="b6eb6a243b013c0759ef17feaca37743.png"/>
       </screenshots>
-      <test-step result="FAILURE" duration="4708">
+      <test-step result="SUCCESS" duration="3215">
         <screenshots>
-          <screenshot image="f01858a99cb50be86b43858f62344d1b.png"/>
-          <screenshot image="522ec83f3b4ece4631bee3a2db36b510.png" source="pagesource3826983420589484362.html.txt"/>
+          <screenshot image="e1b97993bb74d7a031910e3d5a52e21a.png"/>
+          <screenshot image="b6eb6a243b013c0759ef17feaca37743.png"/>
         </screenshots>
         <description>Check dropdown list: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C., United States&lt;/span&gt;</description>
-        <error>java.lang.AssertionError: expected same:&lt;Washington D.C.&gt; was not:&lt;Washington D.C.&gt;</error>
-        <exception>java.lang.AssertionError:expected same:&lt;Washington D.C.&gt; was not:&lt;Washington D.C.&gt;&#xd;
-[final_project.pages.SearchWeatherPage.check_presense_in_dropdown(SearchWeatherPage.java:32), final_project.steps.serenity.EndUserSteps.check_dropdown_list(EndUserSteps.java:60), final_project.steps.SearchWeatherSteps.enteredCapitalCheckPresence(SearchWeatherSteps.java:30)]</exception>
       </test-step>
     </test-group>
   </test-group>

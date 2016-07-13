@@ -35,6 +35,10 @@ public class SearchWeatherPage extends PageObject {
         Assert.assertNotNull("flag present", getDriver().findElement(By.xpath(".//nobr/div[contains(@class, 'flag')]")));
     }
 
+    public void click_on_capital(){
+        Actions builder = new Actions(getDriver());
+        builder.moveToElement(getDriver().findElement(By.id("location_autocomplete"))).click();
+    }
 
 
 

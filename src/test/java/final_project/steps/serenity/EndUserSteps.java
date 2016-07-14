@@ -62,6 +62,7 @@ public class EndUserSteps extends ScenarioSteps {
 
     @Step
     public void search_capital(){
+
         searchWeatherPage.search_perform();
     }
 

@@ -1,20 +1,20 @@
-<acceptance-test-run title="Looking up the definition of &apos;pear&apos;" name="Looking up the definition of &apos;pear&apos;" steps="4" successful="0" failures="0" skipped="0" ignored="4" pending="0" annotated-result="SUCCESS" result="SUCCESS" duration="138" timestamp="2016-07-14T12:57:57.351+03:00" session-id="17f15e1f-1e5f-4879-afc6-8f5579cc413a">
+<acceptance-test-run title="Looking up the definition of &apos;pear&apos;" name="Looking up the definition of &apos;pear&apos;" steps="4" successful="0" failures="0" skipped="0" ignored="4" pending="0" annotated-result="SUCCESS" result="SUCCESS" duration="198" timestamp="2016-07-14T23:36:40.723+03:00" session-id="13d08ca5-10a0-498d-974f-1d9ed66a56da">
   <user-story id="LookupADefinition" name="Lookup a definition" path="stories/consult_dictionary/LookupADefinition.story"/>
   <tags>
     <tag name="Consult dictionary" type="feature"/>
     <tag name="Consult dictionary/Lookup a definition" type="story"/>
   </tags>
   <test-group name="Given the user is on the Wikionary home page" result="SKIPPED">
-    <test-step result="IGNORED" duration="31">
+    <test-step result="IGNORED" duration="24">
       <description>Is the home page</description>
     </test-step>
   </test-group>
   <test-group name="When the user looks up the definition of the word &apos;pear&apos;" result="SKIPPED">
     <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;" result="IGNORED">
-      <test-step result="IGNORED" duration="28">
+      <test-step result="IGNORED" duration="27">
         <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;</description>
       </test-step>
-      <test-step result="IGNORED" duration="26">
+      <test-step result="IGNORED" duration="48">
         <description>Starts search</description>
       </test-step>
     </test-group>

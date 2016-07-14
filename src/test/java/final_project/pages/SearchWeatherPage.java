@@ -20,6 +20,9 @@ public class SearchWeatherPage extends PageObject {
     @FindBy(xpath = ".//img[@class='descr-topo-thumb']")
     private WebElementFacade mapIcon;
 
+    @FindBy(xpath = ".//td[@class='date-header day-end']")
+    private WebElementFacade weatherMap;
+
     public void enter_word(String word){
         searchForm.type(word);
     }
@@ -39,12 +42,13 @@ public class SearchWeatherPage extends PageObject {
     }
 
     public void check_needed_page_open(String capital, String country){
-        Assert.assertNotNull("Page with weather opened", mapIcon.isDisplayed());
+        Assert.assertNotNull("New page with weather related to this city is opened", mapIcon.isDisplayed());
         String actual = getDriver().findElement(By.xpath("//ol/li/a[contains(@href, 'countries')]")).getText();
         Assert.assertEquals(actual, country);
         String actual1 = getDriver().findElement((By.xpath(".//li[@class='current']/a/span"))).getText();
         Assert.assertEquals(actual1, capital);
         getDriver().findElement(By.xpath("//ol/li/a[contains(@href, 'countries')]")).click();
+        Assert.assertNotNull("Table with cities displayed", getDriver().findElement(By.xpath(".//div/table[@class='list_table country-loc-list']")).isDisplayed());
         getDriver().navigate().back();
     }
 

@@ -1,35 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f239260-189c-4350-9ecd-d0609bbb1f19" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/final_project/pages/SearchWeatherPage.class" afterPath="$PROJECT_DIR$/target/test-classes/final_project/pages/SearchWeatherPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/final_project/steps/SearchWeatherSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/final_project/steps/SearchWeatherSteps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/final_project/steps/serenity/EndUserSteps.class" afterPath="$PROJECT_DIR$/target/test-classes/final_project/steps/serenity/EndUserSteps.class" />
+    <list default="true" id="6f239260-189c-4350-9ecd-d0609bbb1f19" name="Default" comment="selenide_ading">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/final_project/pages/SearchWeatherPage.java" afterPath="$PROJECT_DIR$/src/test/java/final_project/pages/SearchWeatherPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/final_project/steps/SearchWeatherSteps.java" afterPath="$PROJECT_DIR$/src/test/java/final_project/steps/SearchWeatherSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/final_project/steps/serenity/EndUserSteps.java" afterPath="$PROJECT_DIR$/src/test/java/final_project/steps/serenity/EndUserSteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/stories/check_weather/CheckWeatherInSpecificCity.story" afterPath="$PROJECT_DIR$/src/test/resources/stories/check_weather/CheckWeatherInSpecificCity.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/stories/consult_dictionary/LookupADefinition.story" afterPath="$PROJECT_DIR$/src/test/resources/stories/consult_dictionary/LookupADefinition.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.check_weather.CheckWeatherInSpecificCity.html" afterPath="$PROJECT_DIR$/target/jbehave/stories.check_weather.CheckWeatherInSpecificCity.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.check_weather.CheckWeatherInSpecificCity.stats" afterPath="$PROJECT_DIR$/target/jbehave/stories.check_weather.CheckWeatherInSpecificCity.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.check_weather.CheckWeatherInSpecificCity.xml" afterPath="$PROJECT_DIR$/target/jbehave/stories.check_weather.CheckWeatherInSpecificCity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.consult_dictionary.LookupADefinition.html" afterPath="$PROJECT_DIR$/target/jbehave/stories.consult_dictionary.LookupADefinition.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.consult_dictionary.LookupADefinition.stats" afterPath="$PROJECT_DIR$/target/jbehave/stories.consult_dictionary.LookupADefinition.stats" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/stories.consult_dictionary.LookupADefinition.xml" afterPath="$PROJECT_DIR$/target/jbehave/stories.consult_dictionary.LookupADefinition.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/storyDurations.props" afterPath="$PROJECT_DIR$/target/jbehave/storyDurations.props" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.check_weather.CheckWeatherInSpecificCity.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.check_weather.CheckWeatherInSpecificCity.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.check_weather.CheckWeatherInSpecificCity.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.check_weather.CheckWeatherInSpecificCity.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.check_weather.CheckWeatherInSpecificCity.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.check_weather.CheckWeatherInSpecificCity.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.consult_dictionary.LookupADefinition.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.consult_dictionary.LookupADefinition.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.consult_dictionary.LookupADefinition.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.consult_dictionary.LookupADefinition.stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/stories.consult_dictionary.LookupADefinition.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/stories.consult_dictionary.LookupADefinition.xml.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/xref.json" afterPath="$PROJECT_DIR$/target/jbehave/view/xref.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/xref.xml" afterPath="$PROJECT_DIR$/target/jbehave/view/xref.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/serenity/49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563.html" afterPath="$PROJECT_DIR$/target/site/serenity/49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563.html" />
@@ -45,9 +30,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5.html" afterPath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5.json" afterPath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5.xml" afterPath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5_screenshots.html" afterPath="$PROJECT_DIR$/target/site/serenity/fa1d304598b4cb9b70987c4f7124eb4b7def49508dcb926ee1c33e454f5306b5_screenshots.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stories/check_weather/CheckWeatherInSpecificCity.story" afterPath="$PROJECT_DIR$/target/test-classes/stories/check_weather/CheckWeatherInSpecificCity.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/stories/consult_dictionary/LookupADefinition.story" afterPath="$PROJECT_DIR$/target/test-classes/stories/consult_dictionary/LookupADefinition.story" />
     </list>
     <ignored path="Final_Project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,36 +46,85 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Final_Project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="194">
       <file leaf-file-name="EndUserSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/final_project/steps/serenity/EndUserSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+            <state relative-caret-position="357">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1327#1328#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1574#1575#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#908#909#0" expanded="false" />
+                <element signature="e#945#946#0" expanded="false" />
+                <element signature="e#1102#1103#0" expanded="false" />
+                <element signature="e#1152#1153#0" expanded="false" />
+                <element signature="e#1189#1190#0" expanded="false" />
+                <element signature="e#1239#1240#0" expanded="false" />
+                <element signature="e#1287#1288#0" expanded="false" />
+                <element signature="e#1327#1328#0" expanded="false" />
+                <element signature="e#1524#1525#0" expanded="false" />
+                <element signature="e#1574#1575#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchWeatherSteps.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AcceptanceTestSuite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/final_project/AcceptanceTestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchWeatherSteps.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/final_project/steps/SearchWeatherSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+            <state relative-caret-position="561">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
-                <element signature="e#1034#1035#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#512#513#0" expanded="false" />
+                <element signature="e#560#561#0" expanded="false" />
+                <element signature="e#658#659#0" expanded="false" />
+                <element signature="e#703#704#0" expanded="false" />
+                <element signature="e#1034#1035#0" expanded="false" />
+                <element signature="e#1079#1080#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,31 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CheckWeatherInSpecificCity.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/stories/check_weather/CheckWeatherInSpecificCity.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StoryManager.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/3.10/jbehave-core-3.10.jar!/org/jbehave/core/embedder/StoryManager.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3417">
-              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchWeatherPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SearchWeatherPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/final_project/pages/SearchWeatherPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+            <state relative-caret-position="116">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,20 +161,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assert.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5457">
-              <caret line="353" column="27" selection-start-line="353" selection-start-column="27" selection-end-line="353" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PageObject.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/1.1.26/serenity-core-1.1.26.jar!/net/serenitybdd/core/pages/PageObject.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8602">
+            <state relative-caret-position="8670">
               <caret line="617" column="22" selection-start-line="617" selection-start-column="22" selection-end-line="617" selection-end-column="22" />
               <folding />
             </state>
@@ -202,12 +203,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/resources/stories/find_country/narrative.txt" />
         <option value="$PROJECT_DIR$/src/test/resources/stories/check_weather/narrative.txt" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/stories/check_weather/CheckWeatherInSpecificCity.story" />
         <option value="$PROJECT_DIR$/src/test/resources/stories/consult_dictionary/LookupADefinition.story" />
-        <option value="$PROJECT_DIR$/src/test/java/final_project/pages/SearchWeatherPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/final_project/steps/serenity/EndUserSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/final_project/steps/SearchWeatherSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/final_project/steps/serenity/EndUserSteps.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/final_project/pages/SearchWeatherPage.java" />
       </list>
     </option>
   </component>
@@ -232,6 +233,7 @@
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="width" value="1366" />
     <option name="height" value="738" />
@@ -261,8 +263,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,6 +281,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Final_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test-classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -487,17 +522,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Final_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jbehaveSimple/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gatling/pom.xml" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\QA courses\Projects\Final_Project" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\QA courses\Projects\Final_Project\src" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.AcceptanceTestSuite">
     <configuration default="false" name="AcceptanceTestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -835,12 +891,49 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -927,6 +1020,21 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="JUnit.AcceptanceTestSuite" />
     </list>
@@ -935,6 +1043,11 @@
         <item index="0" class="java.lang.String" itemvalue="JUnit.AcceptanceTestSuite" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -956,23 +1069,42 @@
       <workItem from="1468354883601" duration="1949000" />
       <workItem from="1468357796260" duration="2229000" />
       <workItem from="1468442006227" duration="15615000" />
-      <workItem from="1468494882589" duration="248000" />
+      <workItem from="1468494882589" duration="2160000" />
+      <workItem from="1468497244920" duration="6673000" />
+      <workItem from="1468527841110" duration="2451000" />
     </task>
+    <task id="LOCAL-00001" summary="123">
+      <created>1468496014639</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1468496014639</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore">
+      <created>1468497072572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1468497072572</updated>
+    </task>
+    <task id="LOCAL-00003" summary="selenide_ading">
+      <created>1468502084621</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1468502084621</updated>
+    </task>
+    <task id="LOCAL-00004" summary="selenide_ading">
+      <created>1468502123071</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1468502123071</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 11h 32m 36s.xml">
-      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 11h 59m 55s.xml">
-      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 12h 08m 43s.xml">
-      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 12h 16m 54s.xml">
-      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AcceptanceTestSuite - 2016.07.14 at 12h 23m 29s.xml">
       <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
     </history-entry>
@@ -991,39 +1123,60 @@
     <history-entry file="AcceptanceTestSuite - 2016.07.14 at 12h 59m 51s.xml">
       <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 15h 20m 10s.xml">
+      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 15h 53m 40s.xml">
+      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 17h 04m 05s.xml">
+      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AcceptanceTestSuite - 2016.07.14 at 23h 39m 29s.xml">
+      <configuration name="AcceptanceTestSuite" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38071000" />
+    <option name="totallyTimeSpent" value="49107000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="738" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35313532" sideWeight="0.5030628" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3353752" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27227724" sideWeight="0.49693722" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24808575" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924962" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39933994" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55775577" sideWeight="0.49693722" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1038,6 +1191,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="selenide_ading" />
+    <option name="LAST_COMMIT_MESSAGE" value="selenide_ading" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -1049,13 +1208,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/final_project/pages/DictionaryPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/1.1.26/serenity-core-1.1.26.jar!/net/serenitybdd/core/pages/WebElementFacade.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1105,10 +1257,17 @@
         <state relative-caret-position="510">
           <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
           <folding>
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#908#909#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1189#1190#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1524#1525#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1118,8 +1277,13 @@
         <state relative-caret-position="272">
           <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding>
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#512#513#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#703#704#0" expanded="false" />
+            <element signature="e#1034#1035#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1128,7 +1292,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1183,6 +1346,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1191,10 +1359,17 @@
         <state relative-caret-position="561">
           <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
           <folding>
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#908#909#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1189#1190#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1524#1525#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1204,8 +1379,13 @@
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#512#513#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#703#704#0" expanded="false" />
+            <element signature="e#1034#1035#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1221,7 +1401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1246,6 +1425,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#707#708#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+            <element signature="e#782#783#0" expanded="false" />
+            <element signature="e#818#819#0" expanded="false" />
+            <element signature="e#1225#1226#0" expanded="false" />
+            <element signature="e#1278#1279#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1268,6 +1456,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,10 +1476,17 @@
         <state relative-caret-position="357">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#908#909#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1189#1190#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1524#1525#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1327,13 +1527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/final_project/AcceptanceTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-jbehave/1.5.0/serenity-jbehave-1.5.0.jar!/net/serenitybdd/jbehave/SerenityStories.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1359,6 +1552,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#707#708#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+            <element signature="e#782#783#0" expanded="false" />
+            <element signature="e#818#819#0" expanded="false" />
+            <element signature="e#1225#1226#0" expanded="false" />
+            <element signature="e#1278#1279#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1366,14 +1568,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#433#434#0" expanded="false" />
+            <element signature="e#475#476#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1381,7 +1580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5457">
           <caret line="353" column="27" selection-start-line="353" selection-start-column="27" selection-end-line="353" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1389,7 +1587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3417">
           <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1397,7 +1594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1411,7 +1607,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-core/1.1.26/serenity-core-1.1.26.jar!/net/serenitybdd/core/pages/PageObject.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8602">
+        <state relative-caret-position="8670">
           <caret line="617" column="22" selection-start-line="617" selection-start-column="22" selection-end-line="617" selection-end-column="22" />
           <folding />
         </state>
@@ -1433,36 +1629,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/final_project/pages/SearchWeatherPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/final_project/steps/SearchWeatherSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        <state relative-caret-position="561">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#512#513#0" expanded="false" />
+            <element signature="e#560#561#0" expanded="false" />
+            <element signature="e#658#659#0" expanded="false" />
+            <element signature="e#703#704#0" expanded="false" />
+            <element signature="e#1034#1035#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/final_project/steps/serenity/EndUserSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="63" column="28" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+        <state relative-caret-position="357">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
           <folding>
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#908#909#0" expanded="false" />
+            <element signature="e#945#946#0" expanded="false" />
+            <element signature="e#1102#1103#0" expanded="false" />
+            <element signature="e#1152#1153#0" expanded="false" />
+            <element signature="e#1189#1190#0" expanded="false" />
+            <element signature="e#1239#1240#0" expanded="false" />
+            <element signature="e#1287#1288#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1524#1525#0" expanded="false" />
+            <element signature="e#1574#1575#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/final_project/steps/SearchWeatherSteps.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/final_project/AcceptanceTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="34" column="38" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
+        <state relative-caret-position="68">
+          <caret line="4" column="50" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/final_project/pages/SearchWeatherPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="56" />
           <folding>
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

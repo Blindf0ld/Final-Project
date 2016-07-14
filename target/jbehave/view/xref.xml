@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1468490390887</whenMade>
+  <whenMade>1468528767751</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -31,8 +31,8 @@ Then they should see the definition &apos;An edible fruit produced by the pear t
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1468490254327</started>
-      <duration>23164</duration>
+      <started>1468528563117</started>
+      <duration>37805</duration>
     </story>
     <story>
       <description></description>
@@ -55,8 +55,8 @@ Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1468490278161</started>
-      <duration>105554</duration>
+      <started>1468528604019</started>
+      <duration>150520</duration>
     </story>
   </stories>
   <stepMatches/>

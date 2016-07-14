@@ -59,4 +59,14 @@ public class EndUserSteps extends ScenarioSteps {
     public void check_dropdown_list(String city, String country){
         searchWeatherPage.check_presense_in_dropdown(city, country);
     }
+
+    @Step
+    public void search_capital(){
+        searchWeatherPage.search_perform();
+    }
+
+    @Step
+    public void check_page_open(String capital, String country){
+        searchWeatherPage.check_needed_page_open(capital, country);
+    }
 }

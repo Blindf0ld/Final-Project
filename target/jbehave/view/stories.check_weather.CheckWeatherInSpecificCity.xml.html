@@ -17,8 +17,10 @@
 <scenario keyword="Scenario:" title="checking weather in capitals">
 <examples keyword="Examples:">
 <step>Given the user is on the Weather Forecast home page</step>
-<step>When user enters &lt;capital&gt;</step>
-<step>Then dropdown should be shown along with corresponding &lt;capital&gt; and &lt;country&gt;</step>
+<step>And user enters &lt;capital&gt;</step>
+<step>And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;</step>
+<step>When user selects capital</step>
+<step>Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens</step>
 <parameters>
 <names><name>capital</name><name>country</name></names>
 <values><value>Washington D.C.</value><value>United States</value></values>
@@ -26,8 +28,10 @@
 
 <example keyword="Example:">{capital=Washington D.C., country=United States}</example>
 <step outcome="successful">Given the user is on the Weather Forecast home page</step>
-<step outcome="successful">When user enters <parameter>Washington D.C.</parameter></step>
-<step outcome="successful">Then dropdown should be shown along with corresponding <parameter>Washington D.C.</parameter> and <parameter>United States</parameter></step>
+<step outcome="successful">And user enters <parameter>Washington D.C.</parameter></step>
+<step outcome="successful">And dropdown is shown along with corresponding <parameter>Washington D.C.</parameter> and <parameter>United States</parameter></step>
+<step outcome="successful">When user selects capital</step>
+<step outcome="successful">Then corresponding page with <parameter>Washington D.C.</parameter> and <parameter>United States</parameter> opens</step>
 </examples>
 </scenario>
 </story>

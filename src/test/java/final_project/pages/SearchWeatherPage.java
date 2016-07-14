@@ -17,6 +17,9 @@ public class SearchWeatherPage extends PageObject {
     @FindBy(id ="searchbtn")
     private WebElementFacade searchButton;
 
+    @FindBy(xpath = ".//img[@class='descr-topo-thumb']")
+    private WebElementFacade mapIcon;
+
     public void enter_word(String word){
         searchForm.type(word);
     }
@@ -35,10 +38,16 @@ public class SearchWeatherPage extends PageObject {
         Assert.assertNotNull("flag present", getDriver().findElement(By.xpath(".//nobr/div[contains(@class, 'flag')]")));
     }
 
-    public void click_on_capital(){
-        Actions builder = new Actions(getDriver());
-        builder.moveToElement(getDriver().findElement(By.id("location_autocomplete"))).click();
+    public void check_needed_page_open(String capital, String country){
+        Assert.assertNotNull("Page with weather opened", mapIcon.isDisplayed());
+        String actual = getDriver().findElement(By.xpath("//ol/li/a[contains(@href, 'countries')]")).getText();
+        Assert.assertEquals(actual, country);
+        String actual1 = getDriver().findElement((By.xpath(".//li[@class='current']/a/span"))).getText();
+        Assert.assertEquals(actual1, capital);
+        getDriver().findElement(By.xpath("//ol/li/a[contains(@href, 'countries')]")).click();
+        getDriver().navigate().back();
     }
+
 
 
 

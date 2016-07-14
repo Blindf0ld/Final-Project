@@ -1,4 +1,4 @@
-<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="55662" timestamp="2016-07-13T00:51:08.149+03:00" session-id="211d8049-e87c-4bd4-9b92-67a848e9d7c2">
+<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="105544" timestamp="2016-07-14T12:57:58.164+03:00" session-id="66fe04ae-085c-4dae-b39a-371b2af3af06">
   <user-story id="CheckWeatherInSpecificCity" name="Check weather in specific city" path="stories/check_weather/CheckWeatherInSpecificCity.story"/>
   <tags>
     <tag name="Check weather" type="feature"/>
@@ -22,39 +22,65 @@
   <test-group name="[1] {capital=Washington D.C., country=United States}" result="SUCCESS">
     <test-group name="Given the user is on the Weather Forecast home page" result="SUCCESS">
       <screenshots>
-        <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
+        <screenshot image="bec0c3502328542bcea3261ff6f60c17.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="40548">
+      <test-step result="SUCCESS" duration="33777">
         <screenshots>
-          <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
+          <screenshot image="c222d6bd6a034e0ebead6a68ee423340.png"/>
         </screenshots>
         <description>Open weather page</description>
       </test-step>
     </test-group>
-    <test-group name="When user enters {Washington D.C.}" result="SUCCESS">
+    <test-group name="And user enters {Washington D.C.}" result="SUCCESS">
       <screenshots>
-        <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
-        <screenshot image="94425a80110019a503c0a6cb68123d89.png"/>
+        <screenshot image="bec0c3502328542bcea3261ff6f60c17.png"/>
+        <screenshot image="5551d6b6db36959e988aace37804528b.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="3927">
+      <test-step result="SUCCESS" duration="3076">
         <screenshots>
-          <screenshot image="e3d37d08c7172be4e6f34f2c938511b0.png"/>
-          <screenshot image="94425a80110019a503c0a6cb68123d89.png"/>
+          <screenshot image="bec0c3502328542bcea3261ff6f60c17.png"/>
+          <screenshot image="03528c705796f63c6472e32ad2603f4d.png"/>
         </screenshots>
         <description>Enter city: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C.&lt;/span&gt;</description>
       </test-step>
     </test-group>
-    <test-group name="Then dropdown should be shown along with corresponding {Washington D.C.} and {United States}" result="SUCCESS">
+    <test-group name="And dropdown is shown along with corresponding {Washington D.C.} and {United States}" result="SUCCESS">
       <screenshots>
-        <screenshot image="e1b97993bb74d7a031910e3d5a52e21a.png"/>
-        <screenshot image="b6eb6a243b013c0759ef17feaca37743.png"/>
+        <screenshot image="5551d6b6db36959e988aace37804528b.png"/>
+        <screenshot image="627814b7a6111903adb9e41121685a45.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="3215">
+      <test-step result="SUCCESS" duration="3197">
         <screenshots>
-          <screenshot image="e1b97993bb74d7a031910e3d5a52e21a.png"/>
-          <screenshot image="b6eb6a243b013c0759ef17feaca37743.png"/>
+          <screenshot image="5551d6b6db36959e988aace37804528b.png"/>
+          <screenshot image="627814b7a6111903adb9e41121685a45.png"/>
         </screenshots>
         <description>Check dropdown list: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C., United States&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="When user selects capital" result="SUCCESS">
+      <screenshots>
+        <screenshot image="627814b7a6111903adb9e41121685a45.png"/>
+        <screenshot image="a17999aa282841dc14e07031076edf53.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="16183">
+        <screenshots>
+          <screenshot image="627814b7a6111903adb9e41121685a45.png"/>
+          <screenshot image="1c8f0fca696b5e327125a0ff9d5b0a4a.png"/>
+        </screenshots>
+        <description>Search capital</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then corresponding page with {Washington D.C.} and {United States} opens" result="SUCCESS">
+      <screenshots>
+        <screenshot image="f6942118c72f1bdc13df2854ceafc54f.png"/>
+        <screenshot image="dfb55f9bc39ddfbb19148557d2c27878.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="26061">
+        <screenshots>
+          <screenshot image="c5d0c7d4964925f82339d506ff27d578.png"/>
+          <screenshot image="0dcdf13379627287ef68eba278922bbd.png"/>
+        </screenshots>
+        <description>Check page open: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C., United States&lt;/span&gt;</description>
       </test-step>
     </test-group>
   </test-group>

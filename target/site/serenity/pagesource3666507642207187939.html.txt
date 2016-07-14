@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>10 Day Weather Forecast Worldwide</title><meta content="10 day weather forecast for thousands of places Worldwide. Interactive weather maps for every country on the planet." name="description" /><meta content="10 day weather forecast,weather forecast,weather,forecast,weather maps,rain,snow,temperature,wind,www.weather-forecast.com" name="keywords" /><meta property="fb:app_id" content="460425463983282" /><link type="text/css" rel="stylesheet" media="all" href="http://w0.fast-meteo.com/assets/application-624fb321b492707be1545f8b8662dee7.css" /><link type="text/css" rel="stylesheet" media="print" href="http://w0.fast-meteo.com/assets/print-3cd1809c05207b2250b9fb6f518ce970.css" /><script src="http://pagead2.googlesyndication.com/pagead/osd.js"></script><script src="http://asset.pagefair.net/ads.min.js"></script><script src="http://asset.pagefair.com/measure.min.js"></script><script type="text/javascript" async="" src="http://stats.g.doubleclick.net/dc.js"></script><script async="" type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script><script type="text/javascript" src="http://w0.fast-meteo.com/assets/vendor/modernizr-7b1a54ed8ea52430183b841d219f4140.js"></script><link rel="shortcut icon" href="/favicon.ico" /><link href="http://de.weather-forecast.com/" hreflang="de" rel="alternate" />
+<link href="http://www.weather-forecast.com/" hreflang="en" rel="alternate" />
+<link href="http://es.weather-forecast.com/" hreflang="es" rel="alternate" />
+<link href="http://fr.weather-forecast.com/" hreflang="fr" rel="alternate" />
+<link href="http://ja.weather-forecast.com/" hreflang="ja" rel="alternate" />
+<link href="http://nl.weather-forecast.com/" hreflang="nl" rel="alternate" />
+<link href="http://zh.weather-forecast.com/" hreflang="zh" rel="alternate" /><script type="text/javascript">var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();</script><script>
+  var uj_funcs = [];
+  (function() {
+    window.FCLAYOUT = {};
+    var fclayout = (window.FCLAYOUT || (window.FCLAYOUT = {}));
+    if (window.matchMedia) {
+      fclayout.hidingSidebar = !window.matchMedia('(min-width: 1024px)').matches;
+      
+
+      fclayout.small = !window.matchMedia('(min-width: 640px)').matches;
+      fclayout.portrait = window.matchMedia("(orientation: portrait)").matches;
+    } else {
+      fclayout.hidingSidebar = (window.innerWidth &lt;= 1025);
+      fclayout.small = (window.innerWidth &lt;= 640);
+    }
+  }).call(this);
+</script><script type="text/javascript">
+  var FCMAPS = (window.FCMAPS || (window.FCMAPS = {}));
+  FCMAPS.anim_frames = 40;
+  FCMAPS.hr_step = 6;
+</script>  <script type="text/javascript">&lt;!--
+    height_units = "m";
+    //--&gt;
+  </script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-226744-12']);
+  _gaq.push(['_setDomainName', 'weather-forecast.com']);
+  _gaq.push(['_setCustomVar', 1, 'user_type', 'Visitor', 2]);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">(function() {
+  var checkReloadAds, currentAdThreshold, getAdThreshold, getInnerAreaWidth, resizeTimer, resizer;
+
+  window.adThresholds = [[[1000, 200], [970, 90]], [[768, 200], [728, 90]], [[480, 200], [468, 60]], [[320, 700], [300, 75]], [[0, 0], [320, 50]]];
+
+  getInnerAreaWidth = function(windowWidth) {
+    if (windowWidth &gt;= 1024) {
+      return 1000 - 170;
+    } else {
+      return windowWidth;
+    }
+  };
+
+  getAdThreshold = function() {
+    var extents, height, heightThreshold, i, width, widthThreshold, _bar, _foo, _i, _len, _ref, _ref1, _ref2;
+    width = getInnerAreaWidth(window.innerWidth);
+    height = window.innerHeight;
+    _ref = window.adThresholds;
+    for (i = _i = 0, _len = _ref.length; _i &lt; _len; i = ++_i) {
+      extents = _ref[i];
+      (_ref1 = extents[0], widthThreshold = _ref1[0], heightThreshold = _ref1[1]), (_ref2 = extents[1], _foo = _ref2[0], _bar = _ref2[1]);
+      if (widthThreshold &lt;= width &amp;&amp; heightThreshold &lt;= height) {
+        return i;
+      }
+    }
+    return -1;
+  };
+
+  resizeTimer = -1;
+
+  currentAdThreshold = getAdThreshold();
+
+  resizer = function() {
+    var newBannerHeight, newBannerWidth, oldAdThreshold, _ref;
+    oldAdThreshold = currentAdThreshold;
+    currentAdThreshold = getAdThreshold();
+    if (oldAdThreshold !== currentAdThreshold) {
+      _ref = window.adThresholds[currentAdThreshold][1], newBannerWidth = _ref[0], newBannerHeight = _ref[1];
+      console.log("Switching to " + newBannerWidth + "x" + newBannerHeight);
+      googletag.pubads().refresh();
+      return oldAdThreshold = currentAdThreshold;
+    }
+  };
+
+  checkReloadAds = function() {
+    clearTimeout(resizeTimer);
+    return resizeTimer = setTimeout(resizer, 250);
+  };
+
+  window.addEventListener("resize", checkReloadAds);
+
+  window.addEventListener("deviceorientation", checkReloadAds);
+
+}).call(this);
+</script><script type="text/javascript">var gptAdSlots = [];
+googletag.cmd.push(function() {
+  //googletag.pubads().setTargeting("test","responsive");
+
+  // Define a size mapping object. The first parameter to addSize is
+// a viewport size, while the second is a list of allowed ad sizes.
+var mapping = googletag.sizeMapping().
+addSize([0, 0], [320, 100]).
+addSize([480, 200], [468, 60]).
+addSize([768, 200], [728, 90]).
+addSize([1000, 200], [970,90]).
+addSize([1024, 200], [728,90]).
+build();
+
+gptAdSlots.push(googletag.defineSlot('/1013347/WF_728x90_ATF', [728, 90], 'resp-dfp-leaderboard-atf').
+  defineSizeMapping(mapping).
+  addService(googletag.pubads()));// Define a size mapping object. The first parameter to addSize is
+// a viewport size, while the second is a list of allowed ad sizes.
+var mapping = googletag.sizeMapping().
+addSize([0, 0], [300, 250]).
+addSize([768, 200], [728, 90]).
+addSize([1000, 200], [970,90]).
+addSize([1024, 200], [728,90]).
+build();
+
+gptAdSlots.push(googletag.defineSlot('/1013347/WF_728x90_BTF', [728, 90], 'resp-dfp-leaderboard-btf').
+  defineSizeMapping(mapping).
+  addService(googletag.pubads()));    if (!FCLAYOUT.hidingSidebar &amp;&amp; !FCLAYOUT.usingDoubleSidebar) {
+      googletag.defineSlot('/1013347/WFC_160x600', [160, 600], 'div-gpt-ad-1333462031640-4').addService(googletag.pubads());
+    }
+  if (!FCLAYOUT.hidingSidebar) {
+    if (FCLAYOUT.usingDoubleSidebar) {
+      googletag.defineSlot('/1013347/WFC_mpu_wide', [300, 250], 'div-gpt-ad-1434455227995-0').addService(googletag.pubads());
+    } else {
+      googletag.defineSlot('/1013347/WFC_160x600_BTF', [160, 600], 'div-gpt-ad-1333462031640-5').addService(googletag.pubads());
+    }
+  }
+
+  if (navigator.userAgent.indexOf('Safari') == -1 || navigator.userAgent.indexOf('Chrome') != -1) {
+    googletag.pubads().enableSingleRequest();
+  }
+  googletag.enableServices();
+});</script><meta class="foundation-data-attribute-namespace" /><meta class="foundation-mq-xxlarge" /><meta class="foundation-mq-xlarge-only" /><meta class="foundation-mq-xlarge" /><meta class="foundation-mq-large-only" /><meta class="foundation-mq-large" /><meta class="foundation-mq-medium-only" /><meta class="foundation-mq-medium" /><meta class="foundation-mq-small-only" /><meta class="foundation-mq-small" /><style></style><meta class="foundation-mq-topbar" /><script src="http://partner.googleadservices.com/gpt/pubads_impl_91.js" async=""></script><script type="text/javascript" src="http://assets.weather-forecast.com/maps/topographic/Ukraine.cities.forecast.js"></script><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-4/html/container.html" /></head><body class="index"><div id="header_cont" class="not_in_print"><div id="head_bg"><div id="bg_right"></div></div><div id="tcont_head"><div id="logo_cont"><a href="/"><img width="244" height="104" src="http://w0.fast-meteo.com/img/logo_n.jpg" alt="Weather Forecast" /></a></div><div id="header_sky"><div id="flags"><div class="show-for-medium-up"><div class="flag-sprites">
+    <a href="http://www.weather-forecast.com/"><img alt="gb" class="flag flag-gb" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+    <a href="http://fr.weather-forecast.com/"><img alt="fr" class="flag flag-fr" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+    <a href="http://de.weather-forecast.com/"><img alt="de" class="flag flag-de" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+    <a href="http://es.weather-forecast.com/"><img alt="es" class="flag flag-es" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+    <a href="http://nl.weather-forecast.com/"><img alt="nl" class="flag flag-nl" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+    <a href="http://ja.weather-forecast.com/"><img alt="jp" class="flag flag-jp" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+    <a href="http://zh.weather-forecast.com/"><img alt="cn" class="flag flag-cn" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+</div>
+</div><div class="show-for-small"><a aria-expanded="false" aria-controls="flags-drop" class="flags-drop-link flag-sprites" data-dropdown="flags-drop"><img alt="gb" class="flag-large flag-gb" src="http://w0.fast-meteo.com/images/blank.gif" /></a>
+<ul tabindex="-1" aria-hidden="true" data-dropdown-content="" class="flags-drop-list flag-sprites" id="flags-drop">
+    <li><a href="http://www.weather-forecast.com/"><div class="flag flag-gb"></div> English</a></li>
+    <li><a href="http://fr.weather-forecast.com/"><div class="flag flag-fr"></div> Français</a></li>
+    <li><a href="http://de.weather-forecast.com/"><div class="flag flag-de"></div> Deutch</a></li>
+    <li><a href="http://es.weather-forecast.com/"><div class="flag flag-es"></div> Español</a></li>
+    <li><a href="http://nl.weather-forecast.com/"><div class="flag flag-nl"></div> Nederlands</a></li>
+    <li><a href="http://ja.weather-forecast.com/"><div class="flag flag-jp"></div> 日本語</a></li>
+    <li><a href="http://zh.weather-forecast.com/"><div class="flag flag-cn"></div> 中文</a></li>
+</ul>
+</div></div><form action="/locations/catch" class="top-search-box" id="search-box" method="post"> 
+  
+  
+  <input type="text" onfocus="this.value='';" autocomplete="off" value="ENTER A CITY OR COUNTRY:" maxlength="255" size="26" name="query" tabindex="1" id="location" class="textinput" /> 
+	<input type="hidden" name="loc_id" id="location_loc_id" />
+  <input type="submit" value="Search" class="searchbtn" id="searchbtn" /> <input type="hidden" value="save" name="action" /> 
+</form>
+</div></div></div><div style="clear:both;"></div><div class="contain-to-grid cont-for-menu sticky"><nav role="navigation" data-topbar="" class="top-bar"><ul class="title-area"><li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li><li class="show-for-small"><form method="post" id="menu-search-box" action="/locations/catch"><input placeholder="ENTER A CITY OR COUNTRY:" name="query" id="search-in-menu" class="search-small search-in-menu" autocomplete="off" /><input type="hidden" name="loc_id" id="search-in-menu-loc-id" /></form></li></ul><section class="top-bar-section"><ul class="left"><li><a href="/" class="active">Home</a></li><li><a href="/countries">Weather Forecasts</a></li><li><a href="/maps">Weather maps</a></li><li><a href="/photos">Photo Gallery</a></li></ul><ul class="right"><li><a href="/sign_in">Login</a></li><li><a href="/sign_up">Sign up</a></li></ul></section></nav></div><div id="upper-content"><div id="flash">
+</div></div><div class="custom-row"><div class="sidebar show-for-large-up"><div id="midsidebar"><div id="innersidebar" class="not_in_print"><div class="photos-in-sidebar upper">  <div class="img_col leftbsect">
+    <a href="/locations/Paris/photos/17446"><img src="http://www.weather-forecast.com/system/images/17446/thumb_col/paris_suiste.jpg" alt="Paris" /></a>
+    <p class="col_link"><a href="/locations/Paris/photos/17446">Paris</a></p>
+  </div>
+</div><div style="clear: both; height: 8px;"></div>
+  <script type="text/javascript">
+    if (!FCLAYOUT.hidingSidebar) {
+      if (FCLAYOUT.usingDoubleSidebar) {
+        document.write('\n          &lt;script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"&gt;&lt;\/script&gt;\n          &lt;!-- WFC 300x600 (upper) --&gt;\n          &lt;ins class=\"adsbygoogle\"\n               style=\"display:inline-block;width:300px;height:600px\"\n               data-ad-client=\"ca-pub-4050098466880863\"\n               data-ad-slot=\"3633743665\"&gt;&lt;\/ins&gt;\n          &lt;script&gt;\n          (adsbygoogle = window.adsbygoogle || []).push({});\n          &lt;\/script&gt;\n');      } else {
+        document.write('\n          &lt;div id=\'div-gpt-ad-1333462031640-4\' style=\'width:160px; height:600px;\'&gt;\n            &lt;script type=\'text/javascript\'&gt;\n              /* WFC_160x600 */\n              googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1333462031640-4\'); });\n            &lt;\/script&gt;\n          &lt;\/div&gt;\n');      }
+    }
+  </script>
+          <div style="width: 160px; height: 600px;" id="div-gpt-ad-1333462031640-4">
+            <script type="text/javascript">
+              /* WFC_160x600 */
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1333462031640-4'); });
+            </script>
+          <div id="google_ads_iframe_/1013347/WFC_160x600_0__container__" style="border: 0pt none;"><iframe width="160" height="600" frameborder="0" id="google_ads_iframe_/1013347/WFC_160x600_0" title="3rd party ad content" name="google_ads_iframe_/1013347/WFC_160x600_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;"></iframe></div><iframe width="0" height="0" frameborder="0" id="google_ads_iframe_/1013347/WFC_160x600_0__hidden__" title="" name="google_ads_iframe_/1013347/WFC_160x600_0__hidden__" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom; visibility: hidden; display: none;" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;"></iframe></div>
+
+<div class="photos-in-sidebar">  <div class="img_col leftbsect">
+    <a href="/locations/Quiberon/photos/14467"><img src="http://www.weather-forecast.com/system/images/14467/thumb_col/Quiberon.jpg" alt="Quiberon main beach" /></a>
+    <p class="col_link"><a href="/locations/Quiberon/photos/14467">Quiberon</a></p>
+  </div>
+</div><div style="clear: both; margin-bottom: 8px;"></div>
+<script type="text/javascript">
+  if (!FCLAYOUT.hidingSidebar) {
+    if (FCLAYOUT.usingDoubleSidebar) {
+      document.write('\n        &lt;!-- /1013347/WFC_mpu_wide --&gt;\n        &lt;div id=\'div-gpt-ad-1434455227995-0\' style=\'height:250px; width:300px;\'&gt;\n        &lt;script type=\'text/javascript\'&gt;\n        googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1434455227995-0\'); });\n        &lt;\/script&gt;\n        &lt;\/div&gt;\n');    } else {
+      document.write('\n        &lt;!-- WFC_160x600_BTF --&gt;\n        &lt;div id=\'div-gpt-ad-1333462031640-5\' style=\'width:160px; height:600px;\'&gt;\n        &lt;script type=\'text/javascript\'&gt;\n        googletag.cmd.push(function() { googletag.display(\'div-gpt-ad-1333462031640-5\'); });\n        &lt;\/script&gt;\n        &lt;\/div&gt;\n');    }
+  }
+</script>
+        <!-- WFC_160x600_BTF -->
+        <div style="width: 160px; height: 600px;" id="div-gpt-ad-1333462031640-5">
+        <script type="text/javascript">
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1333462031640-5'); });
+        </script>
+        <div id="google_ads_iframe_/1013347/WFC_160x600_BTF_0__container__" style="border: 0pt none;"><iframe width="160" height="600" frameborder="0" id="google_ads_iframe_/1013347/WFC_160x600_BTF_0" title="3rd party ad content" name="google_ads_iframe_/1013347/WFC_160x600_BTF_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;"></iframe></div></div>
+
+<hr /><div class="about_widget"><h3><a href="/pages/configure_feed">Weather Forecast Widget</a></h3><p><a href="/pages/configure_feed"><img width="153" height="85" border="0" src="/images/weather_forecast_widget_2x.png" alt="Weather Forecast Widget" /></a></p></div></div></div></div><div class="content">
+<div class="row">
+
+  <div class="small-12 column">
+    <h1>Accurate 10 Day Weather Forecasts from Weather-Forecast.com</h1>
+    <p class="intro read-more-small">
+      <span class="read-more-content">
+        Accurate 10 Day Weather Forecasts for thousands of places around the World. We provide detailed Weather Forecasts over a 10 day period updated four times a day. Our interactive weather maps can be customized to show forecasts of temperature, weather and wind. You can also overlay pressure and live weather observations on maps of any country. Select our weather today forecast pages to get 3 hourly detail and live weather reports. Browse our weather photo albums showing a great selection of weather extremes from around the world including hurricanes, floods, storms, tornadoes and major snow events.
+      </span>
+     <a href="#" class="read-more-label read-more-label-unused">Read More</a></p>
+  </div>
+
+    <div class="centered-b">
+      <div id="resp-dfp-leaderboard-atf"><script type="text/javascript">googletag.cmd.push(function() { googletag.display('resp-dfp-leaderboard-atf'); });</script><div id="google_ads_iframe_/1013347/WF_728x90_ATF_0__container__" style="border: 0pt none;"><iframe width="728" height="90" frameborder="0" id="google_ads_iframe_/1013347/WF_728x90_ATF_0" title="3rd party ad content" name="google_ads_iframe_/1013347/WF_728x90_ATF_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;"></iframe></div></div>
+    </div>
+
+  <!--[if lte IE 8]>
+  <style type="text/css">
+    .half-map-cont .wxicon {
+      background-image: url(http://w0.fast-meteo.com/assets/smallweathericons/sprite-067-7ff690be9aeac51a1972c7c7ad1d4d0d.png);
+    }
+  </style>
+<![endif]-->
+
+<div class="small-12 column">
+  <div class="row half-map-cont">
+    <div class="small-12 medium-6 columns map-side-cont">
+      <div class="basic"><div id="scrollBox" class="bright"><div id="mapcontainer" class="rtn"><div class="zoom-control"><a href="" class="plus inactive zoom">+</a><a href="/maps/Ukraine" class="minus zoom">-</a></div><div class="play-control"><div href="" class="frame-back inactive"><div class="bar"></div><div class="triangle triangle-left"></div></div><div href="" class="frame-forward"><div class="triangle triangle-right"></div><div class="bar"></div></div><div style="clear: both;"></div></div><img src="http://assets.weather-forecast.com/maps/topographic/Ukraine-marine.jpg" name="mapimg" id="mapimg" alt="" /><table cellspacing="0" cellpadding="0" border="0" onclick="return false;" id="loaderContainer" class="not_in_print" style="width: 385px; height: 385px; visibility: visible;"><tbody><tr><td valign="middle" align="center"><table width="446" cellspacing="2" border="0" id="progressTable" style="visibility: hidden;"><tbody><tr><td style="font-size:16px;font-weight:bold;" colspan="28">Preloading...</td></tr><tr><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td><td class="progressBlank"></td></tr></tbody></table><table width="446" cellspacing="2" border="0" id="loaderTable" style="visibility: visible;"><tbody><tr><td align="center" style="font-size:16px;font-weight:bold;">Loading...</td></tr></tbody></table></td></tr></tbody></table><div style="position: absolute; left:0px; top:0px;"><img border="0" style="position: absolute; left:0px; top:0px; z-index:1;" src="/images/blank.gif" galleryimg="no" alt="" /></div><div style="position: absolute; left:0px; top:0px; right: 0; bottom: 0;"><img border="0" style="position: absolute; left: 0px; top: 0px; z-index: 1; visibility: hidden; display: none;" src="/images/blank.gif" name="img_over" id="img_over" galleryimg="no" alt="" /></div><div id="crossU"></div><div id="crossD"></div><div id="crossL"></div><div id="crossR"></div></div></div><div class="symbols_name_div"></div><div class="name_div"></div></div>
+    </div>
+    <div class="small-12 medium-6 columns list-side-cont flag-sprites">
+      <h2 class="list-side__header">Weather Forecasts</h2>
+      <table style="width: 100%;" class="list_table homepage-cities">
+        <tbody><tr>
+            <td>
+              <b><a href="/locations/Kyiv/forecasts/latest">Kyiv</a></b>
+            </td>
+            <td>
+              <a href="/locations/Kryvyi-Rih/forecasts/latest">Kryvyi Rih</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <b><a href="/locations/Kharkiv/forecasts/latest">Kharkiv</a></b>
+            </td>
+            <td>
+              <a href="/locations/Mykolaiv/forecasts/latest">Mykolaiv</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <b><a href="/locations/Dnepropetrovsk/forecasts/latest">Dnipropetrovs'k</a></b>
+            </td>
+            <td>
+              <a href="/locations/Mariupol/forecasts/latest">Mariupol</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <b><a href="/locations/Donetsk/forecasts/latest">Donetsk</a></b>
+            </td>
+            <td>
+              <a href="/locations/Lugansk/forecasts/latest">Luhans'k</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <b><a href="/locations/Odessa/forecasts/latest">Odessa</a></b>
+            </td>
+            <td>
+              <a href="/locations/Khmelnitsky/forecasts/latest">Kamelnitskiy</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <a href="/locations/Zaporizhia/forecasts/latest">Zaporozhye</a>
+            </td>
+            <td>
+              <a href="/locations/Sevastopol/forecasts/latest">Sevastopol</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <a href="/locations/Lvov/forecasts/latest">Lviv</a>
+            </td>
+            <td>
+              <a href="/locations/Makiivka/forecasts/latest">Makiivka</a>
+            </td>
+        </tr>
+      </tbody></table>
+      <div class="view-more"><div onclick="window.location.href='/countries/Ukraine?top100=yes'" src="/images/blank.gif" class="flag flag-ua"></div> <a style="text-decoration: underline;" href="/countries/Ukraine?top100=yes">More Ukraine cities </a></div>
+
+        <table align="center" style="width: 100%;" class="mapctrytab flag-sprites">
+            <tbody><tr>
+              <td><div onclick="window.location.href='/countries/Germany'" src="/images/blank.gif" class="flag flag-de"></div> <a href="/countries/Germany">Germany</a></td>
+              <td><div onclick="window.location.href='/countries/Italy'" src="/images/blank.gif" class="flag flag-it"></div> <a href="/countries/Italy">Italy</a></td>
+            </tr>
+            <tr>
+              <td><div onclick="window.location.href='/countries/France'" src="/images/blank.gif" class="flag flag-fr"></div> <a href="/countries/France">France</a></td>
+              <td><div onclick="window.location.href='/countries/United-Kingdom'" src="/images/blank.gif" class="flag flag-gb"></div> <a href="/countries/United-Kingdom">United Kingdom</a></td>
+            </tr>
+        </tbody></table>
+      <div class="view-more"><a style="text-decoration: underline;" href="/countries">More countries</a></div>
+    </div>
+  </div>
+</div>
+
+
+
+    <p class="geo-ip">
+      Geolocation by IP: <a href="/locations/Kyiv/forecasts/latest">Kyiv</a>
+    </p>
+
+  <div style="font-size: 12px;">
+    <div class="img_feature">
+  <h6>
+    Photos from <a href="/photos">the gallery</a>
+  </h6>
+  <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-4">
+    
+      <li>
+        <div style="margin-left: 0;" class="img"><a href="/locations/Abondance/photos/2949"><img src="http://www.weather-forecast.com/system/images/2949/thumb_feature/Abondance.jpg" class="first" alt="Ruined wooden building, Abondance" /></a><p class="ph-loc"><a href="/locations/Abondance/photos/2949">Abondance</a></p><p class="ph-date"> 25 Feb 2005</p></div>
+        </li>
+
+      <li>
+        <div class="img"><a href="/photos/3023"><img src="http://www.weather-forecast.com/system/images/3023/thumb_feature/nightmare.JPG" alt="Base of Cumulonimbus" /></a><p class="ph-loc"><a href="/photos/3023">Base of Cumulonimbus</a></p><p class="ph-date"> 17 Aug 2011</p></div>
+        </li>
+
+      <li>
+        <div class="img"><a href="/locations/Ajaccio/photos/7835"><img src="http://www.weather-forecast.com/system/images/7835/thumb_feature/Ajaccio.jpg" alt="View of Corsica from Easyjet Flight, Ajaccio" /></a><p class="ph-loc"><a href="/locations/Ajaccio/photos/7835">Ajaccio</a></p><p class="ph-date"> 15 May 2012</p></div>
+        </li>
+
+      <li>
+        <div style="margin-right: 0;" class="img"><a href="/locations/Biarritz/photos/13708"><img src="http://www.weather-forecast.com/system/images/13708/thumb_feature/Biarritz.jpg" class="last" alt="Biarritz" /></a><p class="ph-loc"><a href="/locations/Biarritz/photos/13708">Biarritz</a></p></div>
+        </li>
+  </ul>
+</div>
+
+  </div>
+  <div style="clear:both;"></div>
+
+    
+
+<div class="global-weatherfinder">
+
+
+  <p class="global-weatherfinder__header">
+    <nobr class="">
+        UKRAINE WEATHER EXTREMES
+    </nobr>
+  </p>
+
+  <table class="global-weatherfinder__list">
+    <tbody><tr>
+      <th>Today (Thu)</th>
+        <th>Fri</th>
+        <th>Sat</th>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+    </tr>
+    <tr>
+      <th colspan="6"><span style="color: #FF0000;">HOTTEST</span></th>
+    </tr>
+    <tr>
+        <td>
+            <a href="/locations/Kherson/forecasts/latest" class="loclink">Kherson</a> <br />
+            max <span class="temp">35.4</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Kherson/forecasts/latest" class="loclink">Kherson</a> <br />
+            max <span class="temp">36.1</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Kherson/forecasts/latest" class="loclink">Kherson</a> <br />
+            max <span class="temp">36.5</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Kherson/forecasts/latest" class="loclink">Kherson</a> <br />
+            max <span class="temp">38.7</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Kryvyi-Rih/forecasts/latest" class="loclink">Kryvyy Rih</a> <br />
+            max <span class="temp">36.0</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Alchevsk/forecasts/latest" class="loclink">Alchevsk</a> <br />
+            max <span class="temp">32.6</span>
+            °<span class="tempu">C</span>
+        </td>
+    </tr>
+    <tr>
+      <th colspan="6"><span style="color: #0000FF;">COLDEST</span></th>
+    </tr>
+    <tr>
+        <td>
+            <a href="/locations/Chernivtsi/forecasts/latest" class="loclink">Chernivtsi</a> <br />
+            min <span class="temp">15.8</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Lvov/forecasts/latest" class="loclink">Lvov</a> <br />
+            min <span class="temp">10.2</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Ivano-Frankovsk/forecasts/latest" class="loclink">Ivano-Frankovsk</a> <br />
+            min <span class="temp">12.4</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Lvov/forecasts/latest" class="loclink">Lvov</a> <br />
+            min <span class="temp">14.3</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Uzhgorod/forecasts/latest" class="loclink">Uzhgorod</a> <br />
+            min <span class="temp">15.3</span>
+            °<span class="tempu">C</span>
+        </td>
+        <td>
+            <a href="/locations/Lvov/forecasts/latest" class="loclink">Lvov</a> <br />
+            min <span class="temp">11.3</span>
+            °<span class="tempu">C</span>
+        </td>
+    </tr>
+    <tr>
+      <th colspan="6"><span style="color: #000033;">WETTEST</span></th>
+    </tr>
+    <tr>
+        <td>
+            <a href="/locations/Lvov/forecasts/latest" class="loclink">Lvov</a><br />
+             <span class="rain">43</span> <span class="rainu">mm</span>
+         </td>
+        <td>
+            <a href="/locations/Chernivtsi/forecasts/latest" class="loclink">Chernivtsi</a><br />
+             <span class="rain">11</span> <span class="rainu">mm</span>
+         </td>
+        <td>
+            <a href="/locations/Uzhgorod/forecasts/latest" class="loclink">Uzhgorod</a><br />
+             <span class="rain">46</span> <span class="rainu">mm</span>
+         </td>
+        <td>
+            <a href="/locations/Chernivtsi/forecasts/latest" class="loclink">Chernivtsi</a><br />
+             <span class="rain">26</span> <span class="rainu">mm</span>
+         </td>
+        <td>
+            <a href="/locations/Kirovograd/forecasts/latest" class="loclink">Kirovograd</a><br />
+             <span class="rain">68</span> <span class="rainu">mm</span>
+         </td>
+        <td>
+            <a href="/locations/Cherkassy/forecasts/latest" class="loclink">Cherkassy</a><br />
+             <span class="rain">20</span> <span class="rainu">mm</span>
+         </td>
+    </tr>
+    <tr>
+      <th colspan="6"><span style="color: #009933;">WINDIEST</span></th>
+    </tr>
+    <tr>
+          <td>
+              <a href="/locations/Berdyansk/forecasts/latest" class="loclink">Berdyansk</a> <br />
+              <span class="wind">35</span> <span class="windu">km/h</span>
+          </td>
+          <td>
+              <a href="/locations/Berdyansk/forecasts/latest" class="loclink">Berdyansk</a> <br />
+              <span class="wind">36</span> <span class="windu">km/h</span>
+          </td>
+          <td>
+              <a href="/locations/Mariupol/forecasts/latest" class="loclink">Mariupol</a> <br />
+              <span class="wind">39</span> <span class="windu">km/h</span>
+          </td>
+          <td>
+              <a href="/locations/Mariupol/forecasts/latest" class="loclink">Mariupol</a> <br />
+              <span class="wind">44</span> <span class="windu">km/h</span>
+          </td>
+          <td>
+              <a href="/locations/Makiivka/forecasts/latest" class="loclink">Makiivka</a> <br />
+              <span class="wind">43</span> <span class="windu">km/h</span>
+          </td>
+          <td>
+              <a href="/locations/Ternopol/forecasts/latest" class="loclink">Ternopol</a> <br />
+              <span class="wind">39</span> <span class="windu">km/h</span>
+          </td>
+    </tr>
+  </tbody></table>
+
+</div>
+
+
+    <div class="centered-b b-with-whitespace">
+      <div id="resp-dfp-leaderboard-btf"><script type="text/javascript">googletag.cmd.push(function() { googletag.display('resp-dfp-leaderboard-btf'); });</script><div id="google_ads_iframe_/1013347/WF_728x90_BTF_0__container__" style="border: 0pt none;"><iframe width="728" height="90" frameborder="0" id="google_ads_iframe_/1013347/WF_728x90_BTF_0" title="3rd party ad content" name="google_ads_iframe_/1013347/WF_728x90_BTF_0" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" src="javascript:&quot;<html><body style='background:transparent'></body></html>&quot;"></iframe></div></div>
+    </div>
+
+  <br />
+
+</div>
+</div></div><div id="sfooter">
+  <div class="linear-share show-for-small">
+    <h5 class="show-for-medium-up">Share</h5>
+<ul>
+  <li><a href="https://www.facebook.com/wxforecast"><img src="/images/fb.png" /><span>Like us</span></a></li>
+  <li><a href="https://twitter.com/meteo365"><img src="/images/t.png" /><span>Follow us</span></a></li>
+  <li><a rel="publisher" href="https://plus.google.com/+weatherforecastcom"><img src="/images/g.png" /><span>Add us</span></a></li>
+  <li class="last"><a href="http://www.youtube.com/cityweather"><img src="/images/y.png" /><span>Watch us</span></a></li>
+</ul>
+
+  </div>
+
+  <div class="footer-logo-links show-for-large-up">
+    <ul>
+        <li><a href="http://www.surf-forecast.com" rel="nofollow"><img width="130" height="41" src="http://www.weather-forecast.com/images/surf.png" alt="Surf-Forecast logo" /></a></li>
+        <li><a href="http://www.snow-forecast.com" rel="nofollow"><img width="130" height="37" src="http://www.weather-forecast.com/images/snow.png" alt="Snow-Forecast logo" /></a></li>
+        <li><a href="http://www.mountain-forecast.com" rel="nofollow"><img width="130" height="37" src="http://www.weather-forecast.com/images/mountain.png" alt="Mountain-Forecast logo" /></a></li>
+        <li><a href="http://www.tide-forecast.com" rel="nofollow"><img width="130" height="37" src="http://www.weather-forecast.com/images/tide.png" alt="Tide-Forecast logo" /></a></li>
+    </ul>
+  </div>
+
+  <div class="footer-links">
+    <div class="row">
+      <div class="medium-4 columns">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/pages/contact">Contact us</a></li>
+          <li><a href="/pages/terms" rel="nofollow">Terms</a></li>
+          <li><a href="/pages/privacy" rel="nofollow">Privacy</a></li>
+          <li><a href="/pages/cookie_policy" rel="nofollow">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+
+      <div class="medium-4 columns">
+      <h5>Weather Photos</h5>
+        <ul>
+          <li><a href="/albums/5/photos">Cloud Formations</a></li>
+          <li><a href="/albums/18/photos">Autumn Colours</a></li>
+          <li><a href="/albums/3/photos">Lightning</a></li>
+          <li><a href="/albums/12/photos">Rainbows &amp; Reflections</a></li>
+          <li><a href="/albums/1/photos">Snow, Ice &amp; Frost</a></li>
+          <li><a href="/albums/2/photos">Sunrises &amp; Sunsets</a></li>
+          <li><a href="/albums/6/photos">Rain &amp; Floods</a></li>
+        </ul>
+      </div>
+
+      <div class="medium-4 columns show-for-medium-up">
+        <h5 class="show-for-medium-up">Share</h5>
+<ul>
+  <li><a href="https://www.facebook.com/wxforecast"><img src="/images/fb.png" /><span>Like us</span></a></li>
+  <li><a href="https://twitter.com/meteo365"><img src="/images/t.png" /><span>Follow us</span></a></li>
+  <li><a rel="publisher" href="https://plus.google.com/+weatherforecastcom"><img src="/images/g.png" /><span>Add us</span></a></li>
+  <li class="last"><a href="http://www.youtube.com/cityweather"><img src="/images/y.png" /><span>Watch us</span></a></li>
+</ul>
+
+      </div>
+    </div>
+
+
+    <div style="width:100%; text-align:center; clear: both;">
+      <p>© 2016 Meteo365.com</p>
+    </div>
+  </div>
+
+ </div>
+<script type="text/javascript" src="http://w0.fast-meteo.com/assets/application-c8d44880bc4e2855aac30286f4472320.js"></script><script type="text/javascript">(function() {
+  function async_load(script_url){
+    var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+    var s = document.createElement('script'); s.src = protocol + script_url;
+    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+  }
+bm_website_code = '7C6B289F3D7E4B23';
+jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js')});
+jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js')});
+})();</script><script type="text/javascript">$(".zoom-control a.zoom, .also-see-detailed a.zoom").click(function() {
+  if (this.href) {
+    window.location.href=FCMAPS.mapPathPreservingMode(this.href);
+  }
+  return false;
+});</script><script type="text/javascript">$(".play-control .frame-back").click(function() {
+  FCMAPS.advanceByFrames(-1);
+});
+$(".play-control .frame-forward").click(function() {
+  FCMAPS.advanceByFrames(1);
+});</script><script type="text/javascript">var filenames = [];</script><script type="text/javascript">
+  var params = {};
+  $(document).ready(function () {
+    $(".basic_controls .dyn_thumb_controls .mode a").click(function() {
+      // var a_element = $("a", $(this).parents("td")[0])[0];
+      FCMAPS.setMapModeFromUrl(this.href);
+      if (history &amp;&amp; history.replaceState) {
+        history.replaceState(null, "", this.href);
+      }
+      $(".dyn_thumb_controls .selected").removeClass("selected").addClass("not_selected");
+
+      var currentCont = $(".not_selected", $(this).parentsUntil(".btncontblock, .dyn_thumb_controls", "tr"))[0];
+      $(currentCont).addClass("selected").removeClass("not_selected");
+
+      $(this).parents("li.not_selected").addClass("selected").removeClass("not_selected");
+      return false;
+    });
+    $(".advanced_controls .dyn_thumb_controls .mode a").click(function() {
+      FCMAPS.setMapModeFromUrl(this.href, false);
+      var controls_group = $(this).parents(".dyn_thumb_controls");
+      controls_group.find(".selected").removeClass("selected").addClass("not_selected");
+      $($(".not_selected", $(this).parents("tr"))[0]).addClass("selected").removeClass("not_selected");
+      return false;
+    });
+    params.map_mode = {"default":{"type":"marine","over":"none","symbols":"cities.forecast.weather","hr":"6"},"current":{"type":"marine","over":"none","symbols":"cities.forecast.weather","hr":"6"}};
+    params.basic = true;
+    FCMAPS.detailed = true;
+    FCMAPS.scale = 0.67;
+    FCMAPS.width = 601;
+    FCMAPS.height = 448;
+    FCMAPS.thumb_filename = "Ukraine";
+    FCMAPS.titles_for_symbols = {
+      "cities.forecast.weather": " ",
+      "cities.forecast.wind": "Wind Forecast",
+      "cities.forecast.temp": "Temperature Forecast",
+      "snow.forecast.weather.top": "Weather Forecast (Top Lift at Resorts)",
+      "snow.forecast.weather.mid": "Weather Forecast (Mid Mountain)",
+      "snow.forecast.weather.bot": "Weather Forecast (Bottom Lift at Resorts)",
+      "isgoodpiste": "Resorts with Good Piste Conditions Reported",
+      "ispowder": "Resorts with Powder Reported",
+      "isnewsnow": "Resorts with New Snow Reported",
+      "isnewsnow": "Resorts with New Snow Reported",
+      "summary.upper_depth": "Snow Depths at the Resort Top Lift",
+      "summary.lower_depth": "Snow Depths at the Resort Bottom Lift",
+      "summary.fresh_snow_depth": "Resorts with Fresh Snow Reported",
+      "summary.lastsnowed": "Number of Days Since Last Snow",
+      "livecams": "Resort Webcams",
+      "isfullyopen": "Resorts that are Fully Open",
+      "runstoresort": "Runs to Resort Open",
+      "liveweather": "Weather Now",
+      "livetemp": "Temperature Now",
+      "livewind": "Wind Now",
+      "livecitycams": "City Webcams",
+      "livesurfcams": "Beach Webcams",
+      "liveswell": "Wave Buoys"
+    }
+    FCMAPS.time_descriptions = ['Thursday 14 Jul 9am', 'Thursday 14 Jul 3pm', 'Thursday 14 Jul 9pm', 'Friday 15 Jul 3am', 'Friday 15 Jul 9am', 'Friday 15 Jul 3pm', 'Friday 15 Jul 9pm', 'Saturday 16 Jul 3am', 'Saturday 16 Jul 9am', 'Saturday 16 Jul 3pm', 'Saturday 16 Jul 9pm', 'Sunday 17 Jul 3am', 'Sunday 17 Jul 9am', 'Sunday 17 Jul 3pm', 'Sunday 17 Jul 9pm', 'Monday 18 Jul 3am', 'Monday 18 Jul 9am', 'Monday 18 Jul 3pm', 'Monday 18 Jul 9pm', 'Tuesday 19 Jul 3am', 'Tuesday 19 Jul 9am', 'Tuesday 19 Jul 3pm', 'Tuesday 19 Jul 9pm', 'Wednesday 20 Jul 3am', 'Wednesday 20 Jul 9am', 'Wednesday 20 Jul 3pm', 'Wednesday 20 Jul 9pm', 'Thursday 21 Jul 3am', 'Thursday 21 Jul 9am', 'Thursday 21 Jul 3pm', 'Thursday 21 Jul 9pm', 'Friday 22 Jul 3am', 'Friday 22 Jul 9am', 'Friday 22 Jul 3pm', 'Friday 22 Jul 9pm', 'Saturday 23 Jul 3am', 'Saturday 23 Jul 9am', 'Saturday 23 Jul 3pm', 'Saturday 23 Jul 9pm', 'Sunday 24 Jul 3am'];
+    FCMAPS.timezone_descr = 'EEST';
+    FCMAPS.thumbs_to_preload = [ "lapse", "cloud", "weather_pressure", "wind", "prec" ];
+    FCMAPS.initMap1();
+    FCMAPS.initialSwitch();
+
+    
+
+    
+
+    $('#map-loc-namebox').auto_complete_loc({
+      url: '/topographic-maps/Ukraine/ac_location_name?query=__VALUE__',
+      immediate_submit: false,
+      loc_id: 'map_loc_id',
+      default_text: '',
+      use_first_entry: true,
+      callback_on_choice: function(result) {
+        eval("FCMAPS.putCross("+result+")");
+      }
+    });
+    $("input[name='airports']").click(function() {
+      if ($(this).attr('data-class') == 'rtn') {
+        $('#mapcontainer').addClass('rtn');
+      } else {
+        $('#mapcontainer').removeClass('rtn');
+      }
+      FCMAPS.setAirports(this.value);
+    });
+  });
+
+  
+
+  var filename = "Ukraine";
+  var main_filename = "Ukraine";
+  var guests_code=".cc23";
+  var members_code="";
+  var map_hosts=['http://assets.weather-forecast.com'];
+  var static_map_hosts=['http://assets.weather-forecast.com'];
+  var symbol_path = "/maps/topographic/";
+  var map_path = "/maps/topographic/";
+  var default_type_for_anim = "prec";
+  var max_guest_hours = 240;
+  var last_hr = 240;
+
+  var units = 'metric';
+  noClick = false;
+</script>  <script type="text/javascript">&lt;!--
+    initUnits();
+      // $('#metricradio').attr('checked', true);
+      switchUnits('Metric');
+  //--&gt;
+  </script>
+  <script typt="text/javascript">
+    $(document).ready(function () {
+      var url_str = '/locations/ac_location_name?query=__VALUE__';
+      var default_text_str = 'ENTER A CITY OR COUNTRY:';
+      $('#location').auto_complete_loc({url: url_str, default_text: default_text_str, loc_id: 'location_loc_id', prevent_empty_submit: true});
+    });
+  </script>
+<script type="text/javascript">if (typeof init_uj == "function") {
+  init_uj();
+}</script></body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1349" height="2073"></canvas></html>

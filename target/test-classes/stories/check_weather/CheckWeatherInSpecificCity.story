@@ -5,8 +5,10 @@ So that I can prepare myself for everything
 
 Scenario: checking weather in capitals
 Given the user is on the Weather Forecast home page
-When user enters <capital>
-Then dropdown should be shown along with corresponding <capital> and <country>
+And user enters <capital>
+And dropdown is shown along with corresponding <capital> and <country>
+When user selects capital
+Then corresponding page with <capital> and <country> opens
 
 Examples:
 capital|country

@@ -20,13 +20,25 @@ public class SearchWeatherSteps {
         endUserSteps.open_weather_page();
     }
 
-    @When("user enters <capital>")
+    @Given("user enters <capital>")
     public void enterCapital(@Named("capital") String city){
         endUserSteps.enter_city(city);
     }
 
-    @Then("dropdown should be shown along with corresponding <capital> and <country>")
+    @Given("dropdown is shown along with corresponding <capital> and <country>")
     public void enteredCapitalCheckPresence(@Named("capital") String city, @Named("country") String country){
         endUserSteps.check_dropdown_list(city, country);
     }
+
+    @When("user selects capital")
+    public void clickOnEnteredCapital(){
+        endUserSteps.search_capital();
+    }
+
+    @Then("corresponding page with <capital> and <country> opens")
+    public void pageOpened(@Named("capital") String city, @Named("country") String country){
+        endUserSteps.check_page_open(city, country);
+    }
+
+
 }

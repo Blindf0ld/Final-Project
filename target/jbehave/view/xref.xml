@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1468360326773</whenMade>
+  <whenMade>1468490390887</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -13,7 +13,9 @@ I want to look up word definitions
       <name>LookupADefinition.story</name>
       <path>stories/consult_dictionary/LookupADefinition.story</path>
       <html>stories.consult_dictionary.LookupADefinition.html</html>
-      <meta></meta>
+      <meta>skip=
+skip=
+</meta>
       <scenarios>Scenario:Looking up the definition of &apos;apple&apos;
 Given the user is on the Wikionary home page
 When the user looks up the definition of the word &apos;apple&apos;
@@ -29,8 +31,8 @@ Then they should see the definition &apos;An edible fruit produced by the pear t
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1468360224418</started>
-      <duration>43039</duration>
+      <started>1468490254327</started>
+      <duration>23164</duration>
     </story>
     <story>
       <description></description>
@@ -44,15 +46,17 @@ I want to check the weather
       <meta></meta>
       <scenarios>Scenario:checking weather in capitals
 Given the user is on the Weather Forecast home page
-When user enters &lt;capital&gt;
-Then dropdown should be shown along with corresponding &lt;capital&gt; and &lt;country&gt;
+And user enters &lt;capital&gt;
+And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;
+When user selects capital
+Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens
 
 
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1468360268145</started>
-      <duration>55670</duration>
+      <started>1468490278161</started>
+      <duration>105554</duration>
     </story>
   </stories>
   <stepMatches/>

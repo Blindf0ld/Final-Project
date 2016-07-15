@@ -13,15 +13,39 @@
 <step>Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens</step>
 <parameters>
 <names><name>capital</name><name>country</name></names>
-<values><value>Washington D.C.</value><value>United States</value></values>
+<values><value>Sydney</value><value>Australia</value></values>
+<values><value>Rome</value><value>Italy</value></values>
+<values><value>Warsaw</value><value>Poland</value></values>
+<values><value>London</value><value>United Kingdom</value></values>
+<values><value>Copenhagen</value><value>Denmark</value></values>
 </parameters>
 
-<example keyword="Example:">{capital=Washington D.C., country=United States}</example>
+<example keyword="Example:">{capital=Sydney, country=Australia}</example>
 <step outcome="successful">Given the user is on the Weather Forecast home page</step>
-<step outcome="successful">And user enters <parameter>Washington D.C.</parameter></step>
-<step outcome="successful">And dropdown is shown along with corresponding <parameter>Washington D.C.</parameter> and <parameter>United States</parameter></step>
+<step outcome="successful">And user enters <parameter>Sydney</parameter></step>
+<step outcome="successful">And dropdown is shown along with corresponding <parameter>Sydney</parameter> and <parameter>Australia</parameter></step>
 <step outcome="successful">When user selects capital</step>
-<step outcome="successful">Then corresponding page with <parameter>Washington D.C.</parameter> and <parameter>United States</parameter> opens</step>
-</examples>
+<step outcome="successful">Then corresponding page with <parameter>Sydney</parameter> and <parameter>Australia</parameter> opens</step>
+
+<example keyword="Example:">{capital=Rome, country=Italy}</example>
+<step outcome="successful">Given the user is on the Weather Forecast home page</step>
+<step outcome="successful">And user enters <parameter>Rome</parameter></step>
+<step outcome="successful">And dropdown is shown along with corresponding <parameter>Rome</parameter> and <parameter>Italy</parameter></step>
+<step outcome="successful">When user selects capital</step>
+<step outcome="successful">Then corresponding page with <parameter>Rome</parameter> and <parameter>Italy</parameter> opens</step>
+
+<example keyword="Example:">{capital=Warsaw, country=Poland}</example>
+<step outcome="successful">Given the user is on the Weather Forecast home page</step>
+<step outcome="successful">And user enters <parameter>Warsaw</parameter></step>
+<step outcome="successful">And dropdown is shown along with corresponding <parameter>Warsaw</parameter> and <parameter>Poland</parameter></step>
+<step outcome="successful">When user selects capital</step>
+<step outcome="successful">Then corresponding page with <parameter>Warsaw</parameter> and <parameter>Poland</parameter> opens</step>
+
+<example keyword="Example:">{capital=London, country=United Kingdom}</example>
+<step outcome="successful">Given the user is on the Weather Forecast home page</step>
+<step outcome="successful">And user enters <parameter>London</parameter></step>
+<step outcome="successful">And dropdown is shown along with corresponding <parameter>London</parameter> and <parameter>United Kingdom</parameter></step>
+<step outcome="successful">When user selects capital</step>
+<cancelled keyword="STORY CANCELLED" durationKeyword="DURATION" durationInSecs="301"/>
 </scenario>
 </story>

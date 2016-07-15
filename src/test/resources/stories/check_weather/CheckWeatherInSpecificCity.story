@@ -13,3 +13,12 @@ Then corresponding page with <capital> and <country> opens
 Examples:
 capital|country
 Washington D.C.|United States
+Riga|Latvia
+Paris|France
+Budapest|Hungary
+Amsterdam|Netherlands
+Sydney|Australia
+Rome|Italy
+Warsaw|Poland
+London|United Kingdom
+Copenhagen|Denmark

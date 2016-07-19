@@ -15,6 +15,8 @@
 <div class="step">And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;</div>
 <div class="step">When user selects capital</div>
 <div class="step">Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens</div>
+<div class="step">And table with forecast for nearest three days included today for our &lt;capital&gt; present</div>
+<div class="step">And forecast for &lt;capital&gt; corresponding to request</div>
 <table>
 <thead>
 <tr>
@@ -22,44 +24,63 @@
 </thead>
 <tbody>
 <tr>
-<td>Sydney</td><td>Australia</td></tr>
-<tr>
-<td>Rome</td><td>Italy</td></tr>
-<tr>
-<td>Warsaw</td><td>Poland</td></tr>
-<tr>
 <td>London</td><td>United Kingdom</td></tr>
-<tr>
-<td>Copenhagen</td><td>Denmark</td></tr>
 </tbody>
 </table>
-
-<h3 class="example">Example: {capital=Sydney, country=Australia}</h3>
-<div class="step successful">Given the user is on the Weather Forecast home page</div>
-<div class="step successful">And user enters <span class="step parameter">Sydney</span></div>
-<div class="step successful">And dropdown is shown along with corresponding <span class="step parameter">Sydney</span> and <span class="step parameter">Australia</span></div>
-<div class="step successful">When user selects capital</div>
-<div class="step successful">Then corresponding page with <span class="step parameter">Sydney</span> and <span class="step parameter">Australia</span> opens</div>
-
-<h3 class="example">Example: {capital=Rome, country=Italy}</h3>
-<div class="step successful">Given the user is on the Weather Forecast home page</div>
-<div class="step successful">And user enters <span class="step parameter">Rome</span></div>
-<div class="step successful">And dropdown is shown along with corresponding <span class="step parameter">Rome</span> and <span class="step parameter">Italy</span></div>
-<div class="step successful">When user selects capital</div>
-<div class="step successful">Then corresponding page with <span class="step parameter">Rome</span> and <span class="step parameter">Italy</span> opens</div>
-
-<h3 class="example">Example: {capital=Warsaw, country=Poland}</h3>
-<div class="step successful">Given the user is on the Weather Forecast home page</div>
-<div class="step successful">And user enters <span class="step parameter">Warsaw</span></div>
-<div class="step successful">And dropdown is shown along with corresponding <span class="step parameter">Warsaw</span> and <span class="step parameter">Poland</span></div>
-<div class="step successful">When user selects capital</div>
-<div class="step successful">Then corresponding page with <span class="step parameter">Warsaw</span> and <span class="step parameter">Poland</span> opens</div>
 
 <h3 class="example">Example: {capital=London, country=United Kingdom}</h3>
 <div class="step successful">Given the user is on the Weather Forecast home page</div>
 <div class="step successful">And user enters <span class="step parameter">London</span></div>
 <div class="step successful">And dropdown is shown along with corresponding <span class="step parameter">London</span> and <span class="step parameter">United Kingdom</span></div>
 <div class="step successful">When user selects capital</div>
-<div class="cancelled">STORY CANCELLED (DURATION 301 s)</div>
+<div class="step successful">Then corresponding page with <span class="step parameter">London</span> and <span class="step parameter">United Kingdom</span> opens</div>
+<div class="step successful">And table with forecast for nearest three days included today for our <span class="step parameter">London</span> present</div>
+<div class="step failed">And forecast for <span class="step parameter">London</span> corresponding to request <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.IllegalArgumentException: You must supply at least one key and one value.</span></div>
+</div>
+<pre class="failure">java.lang.IllegalArgumentException: You must supply at least one key and one value.
+	(reflection-construct)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.MapCreator.createMapFromObjects(MapCreator.groovy:35)
+	at io.restassured.internal.MapCreator$createMapFromObjects.call(Unknown Source)
+	(groovy-call)
+	at io.restassured.internal.ResponseSpecificationImpl$_content_closure10.doCall(ResponseSpecificationImpl.groovy:254)
+	at io.restassured.internal.ResponseSpecificationImpl$_content_closure10.doCall(ResponseSpecificationImpl.groovy)
+	(reflection-invoke)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	(groovy-call)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:611)
+	(reflection-invoke)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	(groovy-call)
+	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
+	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
+	(groovy-call)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
+	at final_project.pages.SearchWeatherPage.temperature_checking_C(SearchWeatherPage.java:127)
+	at final_project.steps.serenity.EndUserSteps.forecast_request(EndUserSteps.java:80)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$8301ac19.CGLIB$forecast_request$7(&lt;generated&gt;)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$8301ac19$$FastClassByCGLIB$$5159d7e7.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$8301ac19.forecast_request(&lt;generated&gt;)
+	at final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:50)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
+	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)
+...</pre>
 </div>
 </div>

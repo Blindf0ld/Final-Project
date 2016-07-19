@@ -1,1 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Check weather in specific city" skipped="0" tests="1" time="150.51" timestamp="2016-07-196 11:36:44"><testcase name="checking weather in capitals"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Check weather in specific city" skipped="0" tests="1" time="282.97" timestamp="2016-07-201 04:05:41"><testcase name="checking weather in capitals"><error message="You must supply at least one key and one value." type="java.lang.IllegalArgumentException">You must supply at least one key and one value.</error><system-err>You must supply at least one key and one value.&#13;
+io.restassured.internal.MapCreator.createMapFromObjects(MapCreator.groovy:35)&#13;
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#13;
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:611)&#13;
+io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)&#13;
+io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)&#13;
+final_project.pages.SearchWeatherPage.temperature_checking_C(SearchWeatherPage.java:127)&#13;
+final_project.steps.serenity.EndUserSteps.forecast_request(EndUserSteps.java:80)&#13;
+final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:50)&#13;
+</system-err></testcase></testsuite>

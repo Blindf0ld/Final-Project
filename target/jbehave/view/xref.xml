@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1468528767751</whenMade>
+  <whenMade>1468933831455</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -31,8 +31,8 @@ Then they should see the definition &apos;An edible fruit produced by the pear t
 </scenarios>
       <passed>true</passed>
       <pending>false</pending>
-      <started>1468528563117</started>
-      <duration>37805</duration>
+      <started>1468933522501</started>
+      <duration>17639</duration>
     </story>
     <story>
       <description></description>
@@ -50,13 +50,15 @@ And user enters &lt;capital&gt;
 And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;
 When user selects capital
 Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens
+And table with forecast for nearest three days included today for our &lt;capital&gt; present
+And forecast for &lt;capital&gt; corresponding to request
 
 
 </scenarios>
-      <passed>true</passed>
+      <passed>false</passed>
       <pending>false</pending>
-      <started>1468528604019</started>
-      <duration>150520</duration>
+      <started>1468933541203</started>
+      <duration>283449</duration>
     </story>
   </stories>
   <stepMatches/>

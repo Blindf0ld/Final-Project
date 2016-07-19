@@ -69,4 +69,16 @@ public class EndUserSteps extends ScenarioSteps {
     public void check_page_open(String capital, String country){
         searchWeatherPage.check_needed_page_open(capital, country);
     }
+
+    @Step
+    public void forecats_for_three_days(String capital){
+        searchWeatherPage.check_forecast_for_three_days(capital);
+    }
+
+    @Step
+    public void forecast_request(String capital){
+        searchWeatherPage.temperature_checking_C(capital);
+        searchWeatherPage.temperature_checking_F(capital);
+    }
+
 }

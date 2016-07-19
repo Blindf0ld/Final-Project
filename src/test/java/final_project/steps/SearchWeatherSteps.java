@@ -7,9 +7,6 @@ import org.jbehave.core.annotations.Named;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
-/**
- * Created by pc on 11.07.2016.
- */
 public class SearchWeatherSteps {
 
     @Steps
@@ -40,5 +37,14 @@ public class SearchWeatherSteps {
         endUserSteps.check_page_open(city, country);
     }
 
+    @Then("table with forecast for nearest three days included today for our <capital> present")
+    public void forecastPresent(@Named("capital") String city){
+        endUserSteps.forecats_for_three_days(city);
+    }
+
+    @Then("forecast for <capital> corresponding to request")
+    public void forecastRequestChecking(@Named("capital") String city){
+        endUserSteps.forecast_request(city);
+    }
 
 }

@@ -1,4 +1,4 @@
-<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="150510" timestamp="2016-07-14T23:36:44.023+03:00" session-id="e1951ed5-7f3e-4c3d-a41b-3e52d044d515">
+<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="7" successful="6" failures="0" errors="1" skipped="0" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="282974" timestamp="2016-07-19T16:05:41.207+03:00" session-id="be925bdf-738d-4999-ab37-7f2be833c6c1">
   <user-story id="CheckWeatherInSpecificCity" name="Check weather in specific city" path="stories/check_weather/CheckWeatherInSpecificCity.story"/>
   <tags>
     <tag name="Check weather" type="feature"/>
@@ -13,74 +13,102 @@
       <header>country</header>
     </headers>
     <rows>
-      <row result="SUCCESS">
-        <value>Washington D.C.</value>
-        <value>United States</value>
+      <row result="ERROR">
+        <value>London</value>
+        <value>United Kingdom</value>
       </row>
     </rows>
   </examples>
-  <test-group name="[1] {capital=Washington D.C., country=United States}" result="SUCCESS">
+  <test-group name="[1] {capital=London, country=United Kingdom}" result="ERROR">
     <test-group name="Given the user is on the Weather Forecast home page" result="SUCCESS">
       <screenshots>
-        <screenshot image="d5f05e276d7d277b653d66ef638d00ae.png"/>
+        <screenshot image="965fcbf299ce078c7453760429c19ea9.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="63482">
+      <test-step result="SUCCESS" duration="50744">
         <screenshots>
-          <screenshot image="d5f05e276d7d277b653d66ef638d00ae.png"/>
+          <screenshot image="965fcbf299ce078c7453760429c19ea9.png"/>
         </screenshots>
         <description>Open weather page</description>
       </test-step>
     </test-group>
-    <test-group name="And user enters {Washington D.C.}" result="SUCCESS">
+    <test-group name="And user enters {London}" result="SUCCESS">
       <screenshots>
-        <screenshot image="d5f05e276d7d277b653d66ef638d00ae.png"/>
-        <screenshot image="5ee27e1df036a475a85e9e8b845f5119.png"/>
+        <screenshot image="965fcbf299ce078c7453760429c19ea9.png"/>
+        <screenshot image="6bc819ee4bfc84d5b1954c1417b6a9e0.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="5483">
+      <test-step result="SUCCESS" duration="2888">
         <screenshots>
-          <screenshot image="d5f05e276d7d277b653d66ef638d00ae.png"/>
-          <screenshot image="5ee27e1df036a475a85e9e8b845f5119.png"/>
+          <screenshot image="965fcbf299ce078c7453760429c19ea9.png"/>
+          <screenshot image="d34e52c30d2cde6c3951f16336147214.png"/>
         </screenshots>
-        <description>Enter city: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C.&lt;/span&gt;</description>
+        <description>Enter city: &lt;span class=&apos;step-parameter&apos;&gt;London&lt;/span&gt;</description>
       </test-step>
     </test-group>
-    <test-group name="And dropdown is shown along with corresponding {Washington D.C.} and {United States}" result="SUCCESS">
+    <test-group name="And dropdown is shown along with corresponding {London} and {United Kingdom}" result="SUCCESS">
       <screenshots>
-        <screenshot image="5ee27e1df036a475a85e9e8b845f5119.png"/>
-        <screenshot image="5096c56e45a64742276f20221a10ef5a.png"/>
+        <screenshot image="6bc819ee4bfc84d5b1954c1417b6a9e0.png"/>
+        <screenshot image="5e3825dc2919c035ee45acd53af07fa5.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="6005">
+      <test-step result="SUCCESS" duration="2725">
         <screenshots>
-          <screenshot image="0750f289b7c752a1d220c3a80d0e41c3.png"/>
-          <screenshot image="5096c56e45a64742276f20221a10ef5a.png"/>
+          <screenshot image="6bc819ee4bfc84d5b1954c1417b6a9e0.png"/>
+          <screenshot image="5e3825dc2919c035ee45acd53af07fa5.png"/>
         </screenshots>
-        <description>Check dropdown list: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C., United States&lt;/span&gt;</description>
+        <description>Check dropdown list: &lt;span class=&apos;step-parameter&apos;&gt;London, United Kingdom&lt;/span&gt;</description>
       </test-step>
     </test-group>
     <test-group name="When user selects capital" result="SUCCESS">
       <screenshots>
-        <screenshot image="5096c56e45a64742276f20221a10ef5a.png"/>
-        <screenshot image="acce226cb8104284963844e2b7f180a2.png"/>
+        <screenshot image="5e3825dc2919c035ee45acd53af07fa5.png"/>
+        <screenshot image="2597c10db74c5cd2797182fdb0b51304.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="24950">
+      <test-step result="SUCCESS" duration="11602">
         <screenshots>
-          <screenshot image="5096c56e45a64742276f20221a10ef5a.png"/>
-          <screenshot image="0cf29cb0089239b2fcff393aba5459cb.png"/>
+          <screenshot image="5e3825dc2919c035ee45acd53af07fa5.png"/>
+          <screenshot image="ca2b9c3a58a20e5c164636f03739ad64.png"/>
         </screenshots>
         <description>Search capital</description>
       </test-step>
     </test-group>
-    <test-group name="Then corresponding page with {Washington D.C.} and {United States} opens" result="SUCCESS">
+    <test-group name="Then corresponding page with {London} and {United Kingdom} opens" result="SUCCESS">
       <screenshots>
-        <screenshot image="78453e9db3a5d52c3de029422c923e7c.png"/>
-        <screenshot image="747ce06fc95f2f3e1ecdd6fce45ee27b.png"/>
+        <screenshot image="ebb93c464f80583bbebf36100baba3d0.png"/>
+        <screenshot image="d7f35f185fe86c72ca43fdf7c422ab95.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="22540">
+      <test-step result="SUCCESS" duration="43100">
         <screenshots>
-          <screenshot image="3224648d785201348d4aa153ef951930.png"/>
-          <screenshot image="7efea4903a13536673ea8abbffdbcd9b.png"/>
+          <screenshot image="e4a0f4024213006cfce3d4a4a24b5b26.png"/>
+          <screenshot image="2ce7af9586c75fa6a12e4e1ea26e50c6.png"/>
         </screenshots>
-        <description>Check page open: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C., United States&lt;/span&gt;</description>
+        <description>Check page open: &lt;span class=&apos;step-parameter&apos;&gt;London, United Kingdom&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And table with forecast for nearest three days included today for our {London} present" result="SUCCESS">
+      <screenshots>
+        <screenshot image="3453abf05b46de3fb4e600378c0009da.png"/>
+        <screenshot image="497abf824cb8c0162c8e1da1dce2982a.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="23757">
+        <screenshots>
+          <screenshot image="18a9133d72bf6f16d96b7a970288f975.png"/>
+          <screenshot image="fffa789866e40ef0f45f9bc50ef8a6bd.png"/>
+        </screenshots>
+        <description>Forecats for three days: &lt;span class=&apos;step-parameter&apos;&gt;London&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And forecast for ｟London｠ corresponding to request" result="ERROR">
+      <screenshots>
+        <screenshot image="77fd6eede24b885e82a702bfaf514e99.png"/>
+      </screenshots>
+      <test-step result="ERROR" duration="127448">
+        <screenshots>
+          <screenshot image="9fda5b75c430ccdb64aed57894c74729.png"/>
+          <screenshot image="1b5688b472220c25bb8d0e43b7be06af.png" source="pagesource5034377424914763612.html.txt"/>
+        </screenshots>
+        <description>Forecast request: &lt;span class=&apos;step-parameter&apos;&gt;London&lt;/span&gt;</description>
+        <error>java.lang.IllegalArgumentException: You must supply at least one key and one value.</error>
+        <exception>java.lang.IllegalArgumentException:You must supply at least one key and one value.&#xd;
+[io.restassured.internal.MapCreator.createMapFromObjects(MapCreator.groovy:35), groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325), groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019), io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:611), io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251), io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234), io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268), final_project.pages.SearchWeatherPage.temperature_checking_C(SearchWeatherPage.java:127), final_project.steps.serenity.EndUserSteps.forecast_request(EndUserSteps.java:80), final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:50)]</exception>
       </test-step>
     </test-group>
   </test-group>

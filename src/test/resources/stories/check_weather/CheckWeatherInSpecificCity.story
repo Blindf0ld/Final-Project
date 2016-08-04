@@ -15,7 +15,16 @@ And user click on selected country and new page with <capital> opens
 
 
 Examples:
-capital|country
-London|United Kingdom
+capital|country|zone
+Washington D.C.|United States|U.S.A.
+Riga|Latvia|Europe
+Paris|France|Europe
+Budapest|Hungary|Europe
+Amsterdam|Netherlands|Europe
+Sidney|Australia|Australia
+Rome|Italy|Europe
+Warsaw|Poland|Europe
+London|United Kingdom|Europe
+Copenhagen|Denmark|Europe
 
 

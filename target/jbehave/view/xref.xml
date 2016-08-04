@@ -1,39 +1,9 @@
 <xref>
-  <whenMade>1468933831455</whenMade>
+  <whenMade>1470171041206</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
   <stories>
-    <story>
-      <description>Lookup a definition</description>
-      <narrative>In order to talk better
-As a n English student
-I want to look up word definitions
-</narrative>
-      <name>LookupADefinition.story</name>
-      <path>stories/consult_dictionary/LookupADefinition.story</path>
-      <html>stories.consult_dictionary.LookupADefinition.html</html>
-      <meta>skip=
-skip=
-</meta>
-      <scenarios>Scenario:Looking up the definition of &apos;apple&apos;
-Given the user is on the Wikionary home page
-When the user looks up the definition of the word &apos;apple&apos;
-Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;
-
-
-Scenario:Looking up the definition of &apos;pear&apos;
-Given the user is on the Wikionary home page
-When the user looks up the definition of the word &apos;pear&apos;
-Then they should see the definition &apos;An edible fruit produced by the pear tree, similar to an apple but elongated towards the stem.&apos;
-
-
-</scenarios>
-      <passed>true</passed>
-      <pending>false</pending>
-      <started>1468933522501</started>
-      <duration>17639</duration>
-    </story>
     <story>
       <description></description>
       <narrative>In order to 
@@ -50,15 +20,15 @@ And user enters &lt;capital&gt;
 And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;
 When user selects capital
 Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens
+And today temperature for &lt;capital&gt; corresponding to request
 And table with forecast for nearest three days included today for our &lt;capital&gt; present
-And forecast for &lt;capital&gt; corresponding to request
 
 
 </scenarios>
       <passed>false</passed>
       <pending>false</pending>
-      <started>1468933541203</started>
-      <duration>283449</duration>
+      <started>1470170852276</started>
+      <duration>181979</duration>
     </story>
   </stories>
   <stepMatches/>

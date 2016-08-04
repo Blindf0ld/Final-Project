@@ -76,9 +76,16 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
     @Step
-    public void forecast_request(String capital){
-        searchWeatherPage.temperature_checking_C(capital);
-        searchWeatherPage.temperature_checking_F(capital);
+    public void compare_temperature_with_request(String capital){
+        searchWeatherPage.temperature_request_C(capital);
+        searchWeatherPage.check_temperature_in_table_C();
+        searchWeatherPage.temperature_request_F(capital);
+        searchWeatherPage.check_temperature_in_table_F();
+    }
+
+    @Step
+    public void capital_presented_on_opened_page(String capital){
+        searchWeatherPage.capital_presented_in_city_list(capital);
     }
 
 }

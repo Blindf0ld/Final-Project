@@ -42,9 +42,13 @@ public class SearchWeatherSteps {
         endUserSteps.forecats_for_three_days(city);
     }
 
-    @Then("forecast for <capital> corresponding to request")
+    @Then("today temperature for <capital> corresponding to request")
     public void forecastRequestChecking(@Named("capital") String city){
-        endUserSteps.forecast_request(city);
+        endUserSteps.compare_temperature_with_request(city);
     }
 
+    @Then("user click on selected country and new page with <capital> opens")
+    public void openedPageHasNeededCapital(@Named("capital") String city){
+        endUserSteps.capital_presented_on_opened_page(city);
+    }
 }

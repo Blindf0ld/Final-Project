@@ -1,4 +1,4 @@
-<acceptance-test-run title="Looking up the definition of &apos;pear&apos;" name="Looking up the definition of &apos;pear&apos;" steps="4" successful="0" failures="0" skipped="0" ignored="4" pending="0" annotated-result="SUCCESS" result="SUCCESS" duration="144" timestamp="2016-07-19T16:05:39.995+03:00" session-id="d39f7b76-e7c4-4db2-a1c0-1f87cdc5473c">
+<acceptance-test-run title="Looking up the definition of &apos;pear&apos;" name="Looking up the definition of &apos;pear&apos;" steps="4" successful="0" failures="0" skipped="0" ignored="4" pending="0" annotated-result="SUCCESS" result="SUCCESS" duration="160" timestamp="2016-07-19T19:18:25.363+03:00" session-id="536628fd-5e5a-4867-9cfb-ef1bd791541c">
   <user-story id="LookupADefinition" name="Lookup a definition" path="stories/consult_dictionary/LookupADefinition.story"/>
   <tags>
     <tag name="Consult dictionary" type="feature"/>
@@ -11,10 +11,10 @@
   </test-group>
   <test-group name="When the user looks up the definition of the word &apos;pear&apos;" result="SKIPPED">
     <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;" result="IGNORED">
-      <test-step result="IGNORED" duration="26">
+      <test-step result="IGNORED" duration="28">
         <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;pear&lt;/span&gt;</description>
       </test-step>
-      <test-step result="IGNORED" duration="20">
+      <test-step result="IGNORED" duration="17">
         <description>Starts search</description>
       </test-step>
     </test-group>

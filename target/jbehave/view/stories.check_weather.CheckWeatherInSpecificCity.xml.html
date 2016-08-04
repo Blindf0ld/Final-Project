@@ -21,8 +21,8 @@
 <step>And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;</step>
 <step>When user selects capital</step>
 <step>Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens</step>
+<step>And today temperature for &lt;capital&gt; corresponding to request</step>
 <step>And table with forecast for nearest three days included today for our &lt;capital&gt; present</step>
-<step>And forecast for &lt;capital&gt; corresponding to request</step>
 <parameters>
 <names><name>capital</name><name>country</name></names>
 <values><value>London</value><value>United Kingdom</value></values>
@@ -34,50 +34,29 @@
 <step outcome="successful">And dropdown is shown along with corresponding <parameter>London</parameter> and <parameter>United Kingdom</parameter></step>
 <step outcome="successful">When user selects capital</step>
 <step outcome="successful">Then corresponding page with <parameter>London</parameter> and <parameter>United Kingdom</parameter> opens</step>
-<step outcome="successful">And table with forecast for nearest three days included today for our <parameter>London</parameter> present</step>
-<step outcome="failed" keyword="FAILED">And forecast for <parameter>London</parameter> corresponding to request<failure>java.lang.IllegalArgumentException: You must supply at least one key and one value.</failure></step>
+<step outcome="failed" keyword="FAILED">And today temperature for <parameter>London</parameter> corresponding to request<failure>java.lang.AssertionError: 
+Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;)
+     but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And table with forecast for nearest three days included today for our <parameter>London</parameter> present</step>
 </examples>
-<failure>java.lang.IllegalArgumentException: You must supply at least one key and one value.
-	(reflection-construct)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at io.restassured.internal.MapCreator.createMapFromObjects(MapCreator.groovy:35)
-	at io.restassured.internal.MapCreator$createMapFromObjects.call(Unknown Source)
-	(groovy-call)
-	at io.restassured.internal.ResponseSpecificationImpl$_content_closure10.doCall(ResponseSpecificationImpl.groovy:254)
-	at io.restassured.internal.ResponseSpecificationImpl$_content_closure10.doCall(ResponseSpecificationImpl.groovy)
-	(reflection-invoke)
-	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:294)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
-	(groovy-call)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:611)
-	(reflection-invoke)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	(groovy-call)
-	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:251)
-	at io.restassured.specification.ResponseSpecification$content$0.callCurrent(Unknown Source)
-	(groovy-call)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:234)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:268)
-	at final_project.pages.SearchWeatherPage.temperature_checking_C(SearchWeatherPage.java:127)
-	at final_project.steps.serenity.EndUserSteps.forecast_request(EndUserSteps.java:80)
-	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$8301ac19.CGLIB$forecast_request$7(&lt;generated&gt;)
-	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$8301ac19$$FastClassByCGLIB$$5159d7e7.invoke(&lt;generated&gt;)
+<failure>java.lang.AssertionError: 
+Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;)
+     but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java:140)
+	at final_project.steps.serenity.EndUserSteps.compare_temperature_with_request(EndUserSteps.java:81)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$c235b5f.CGLIB$compare_temperature_with_request$12(&lt;generated&gt;)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$c235b5f$$FastClassByCGLIB$$ba78ac41.invoke(&lt;generated&gt;)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
 	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
-	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$8301ac19.forecast_request(&lt;generated&gt;)
-	at final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:50)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$c235b5f.compare_temperature_with_request(&lt;generated&gt;)
+	at final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:47)
 	(reflection-invoke)
 	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)
 	at org.jbehave.core.embedder.StoryRunner$FineSoFar.run(StoryRunner.java:566)

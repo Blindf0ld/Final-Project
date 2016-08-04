@@ -1,26 +1,26 @@
-<acceptance-test-run title="Looking up the definition of &apos;apple&apos;" name="Looking up the definition of &apos;apple&apos;" steps="4" successful="0" failures="0" skipped="0" ignored="4" pending="0" annotated-result="SUCCESS" result="SUCCESS" duration="17063" timestamp="2016-07-19T16:05:22.761+03:00" session-id="d39f7b76-e7c4-4db2-a1c0-1f87cdc5473c">
+<acceptance-test-run title="Looking up the definition of &apos;apple&apos;" name="Looking up the definition of &apos;apple&apos;" steps="4" successful="0" failures="0" skipped="0" ignored="4" pending="0" annotated-result="SUCCESS" result="SUCCESS" duration="21244" timestamp="2016-07-19T19:18:03.749+03:00" session-id="536628fd-5e5a-4867-9cfb-ef1bd791541c">
   <user-story id="LookupADefinition" name="Lookup a definition" path="stories/consult_dictionary/LookupADefinition.story"/>
   <tags>
     <tag name="Consult dictionary" type="feature"/>
     <tag name="Consult dictionary/Lookup a definition" type="story"/>
   </tags>
   <test-group name="Given the user is on the Wikionary home page" result="SKIPPED">
-    <test-step result="IGNORED" duration="132">
+    <test-step result="IGNORED" duration="142">
       <description>Is the home page</description>
     </test-step>
   </test-group>
   <test-group name="When the user looks up the definition of the word &apos;apple&apos;" result="SKIPPED">
     <test-group name="Looks for: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;" result="IGNORED">
-      <test-step result="IGNORED" duration="15801">
+      <test-step result="IGNORED" duration="18772">
         <description>Enters: &lt;span class=&apos;step-parameter&apos;&gt;apple&lt;/span&gt;</description>
       </test-step>
-      <test-step result="IGNORED" duration="26">
+      <test-step result="IGNORED" duration="52">
         <description>Starts search</description>
       </test-step>
     </test-group>
   </test-group>
   <test-group name="Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;" result="SKIPPED">
-    <test-step result="IGNORED" duration="24">
+    <test-step result="IGNORED" duration="25">
       <description>Should see definition: &lt;span class=&apos;step-parameter&apos;&gt;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&lt;/span&gt;</description>
     </test-step>
   </test-group>

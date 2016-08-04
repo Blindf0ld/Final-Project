@@ -9,9 +9,12 @@ And user enters <capital>
 And dropdown is shown along with corresponding <capital> and <country>
 When user selects capital
 Then corresponding page with <capital> and <country> opens
+And today temperature for <capital> corresponding to request
 And table with forecast for nearest three days included today for our <capital> present
-And forecast for <capital> corresponding to request
+
 
 Examples:
 capital|country
 London|United Kingdom
+
+

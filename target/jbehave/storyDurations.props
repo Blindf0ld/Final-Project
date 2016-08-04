@@ -1,7 +1,6 @@
 #org.jbehave.core.embedder.StoryManager
-#Tue Jul 19 16:10:25 EEST 2016
-stories/check_weather/CheckWeatherInSpecificCity.story=284000
+#Tue Aug 02 23:50:36 EEST 2016
+stories/check_weather/CheckWeatherInSpecificCity.story=183000
 threads=1
-total=302000
-threadAverage=302000
-stories/consult_dictionary/LookupADefinition.story=18000
+total=183000
+threadAverage=183000

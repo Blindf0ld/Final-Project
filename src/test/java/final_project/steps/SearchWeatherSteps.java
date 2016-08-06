@@ -38,8 +38,8 @@ public class SearchWeatherSteps {
     }
 
     @Then("table with forecast for nearest three days included today for our <capital> present")
-    public void forecastPresent(@Named("capital") String city){
-        endUserSteps.forecats_for_three_days(city);
+    public void forecastPresent(@Named("zone") String zone, @Named("capital") String city){
+        endUserSteps.forecats_for_three_days(zone, city);
     }
 
     @Then("today temperature for <capital> corresponding to request")

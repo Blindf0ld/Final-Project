@@ -99,11 +99,11 @@ public class SearchWeatherPage extends PageObject {
         tableWithCities.containsText(capital);
     }
 
-    public void check_forecast_for_three_days(String city) {
-        LocalDateTime timeout = LocalDateTime.now(TimeZone.getTimeZone("Europe/ " + city).toZoneId());
+    public void check_forecast_for_three_days(String zone, String city) {
+        LocalDateTime timeout = LocalDateTime.now(TimeZone.getTimeZone(zone + "/ " + city).toZoneId());
         for (int i = 0; i < 3; i++) {
             Assert.assertEquals(forecastMapDayOfWeek.get(i).getText().toUpperCase(), timeout.getDayOfWeek().toString());
-            Assert.assertEquals(forecastMapDate.get(i).getText().toUpperCase(), String.valueOf(timeout.getDayOfMonth()));
+            Assert.assertEquals(Integer.parseInt(forecastMapDate.get(i).getText()), timeout.getDayOfMonth());
             timeout = timeout.plusDays(1);
         }
     }

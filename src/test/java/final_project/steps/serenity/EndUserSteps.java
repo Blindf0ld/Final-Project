@@ -71,8 +71,8 @@ public class EndUserSteps extends ScenarioSteps {
     }
 
     @Step
-    public void forecats_for_three_days(String capital){
-        searchWeatherPage.check_forecast_for_three_days(capital);
+    public void forecats_for_three_days(String zone, String capital){
+        searchWeatherPage.check_forecast_for_three_days(zone, capital);
     }
 
     @Step

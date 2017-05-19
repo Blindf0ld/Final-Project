@@ -1,5 +1,5 @@
 <xref>
-  <whenMade>1470171041206</whenMade>
+  <whenMade>1495186878114</whenMade>
   <createdBy>JBehave</createdBy>
   <metaFilter>-ignore</metaFilter>
   <meta/>
@@ -20,15 +20,16 @@ And user enters &lt;capital&gt;
 And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;
 When user selects capital
 Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens
-And today temperature for &lt;capital&gt; corresponding to request
 And table with forecast for nearest three days included today for our &lt;capital&gt; present
+And today temperature for &lt;capital&gt; corresponding to request
+And user click on selected country and new page with &lt;capital&gt; opens
 
 
 </scenarios>
       <passed>false</passed>
       <pending>false</pending>
-      <started>1470170852276</started>
-      <duration>181979</duration>
+      <started>1495186538974</started>
+      <duration>307289</duration>
     </story>
   </stories>
   <stepMatches/>

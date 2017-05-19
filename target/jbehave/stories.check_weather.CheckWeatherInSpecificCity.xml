@@ -11,41 +11,59 @@
 <step>And dropdown is shown along with corresponding &lt;capital&gt; and &lt;country&gt;</step>
 <step>When user selects capital</step>
 <step>Then corresponding page with &lt;capital&gt; and &lt;country&gt; opens</step>
-<step>And today temperature for &lt;capital&gt; corresponding to request</step>
 <step>And table with forecast for nearest three days included today for our &lt;capital&gt; present</step>
+<step>And today temperature for &lt;capital&gt; corresponding to request</step>
+<step>And user click on selected country and new page with &lt;capital&gt; opens</step>
 <parameters>
-<names><name>capital</name><name>country</name></names>
-<values><value>London</value><value>United Kingdom</value></values>
+<names><name>capital</name><name>country</name><name>zone</name></names>
+<values><value>Washington D.C.</value><value>United States</value><value>U.S.A.</value></values>
+<values><value>Riga</value><value>Latvia</value><value>Europe</value></values>
+<values><value>Paris</value><value>France</value><value>Europe</value></values>
+<values><value>Budapest</value><value>Hungary</value><value>Europe</value></values>
+<values><value>Amsterdam</value><value>Netherlands</value><value>Europe</value></values>
+<values><value>Sidney</value><value>Australia</value><value>Australia</value></values>
+<values><value>Rome</value><value>Italy</value><value>Europe</value></values>
+<values><value>Warsaw</value><value>Poland</value><value>Europe</value></values>
+<values><value>London</value><value>United Kingdom</value><value>Europe</value></values>
+<values><value>Copenhagen</value><value>Denmark</value><value>Europe</value></values>
 </parameters>
 
-<example keyword="Example:">{capital=London, country=United Kingdom}</example>
+<example keyword="Example:">{capital=Washington D.C., country=United States, zone=U.S.A.}</example>
 <step outcome="successful">Given the user is on the Weather Forecast home page</step>
-<step outcome="successful">And user enters <parameter>London</parameter></step>
-<step outcome="successful">And dropdown is shown along with corresponding <parameter>London</parameter> and <parameter>United Kingdom</parameter></step>
+<step outcome="successful">And user enters <parameter>Washington D.C.</parameter></step>
+<step outcome="successful">And dropdown is shown along with corresponding <parameter>Washington D.C.</parameter> and <parameter>United States</parameter></step>
 <step outcome="successful">When user selects capital</step>
-<step outcome="successful">Then corresponding page with <parameter>London</parameter> and <parameter>United Kingdom</parameter> opens</step>
-<step outcome="failed" keyword="FAILED">And today temperature for <parameter>London</parameter> corresponding to request<failure>java.lang.AssertionError: 
-Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;)
-     but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And table with forecast for nearest three days included today for our <parameter>London</parameter> present</step>
-</examples>
+<step outcome="successful">Then corresponding page with <parameter>Washington D.C.</parameter> and <parameter>United States</parameter> opens</step>
+<step outcome="successful">And table with forecast for nearest three days included today for our <parameter>Washington D.C.</parameter> present</step>
+<step outcome="failed" keyword="FAILED">And today temperature for <parameter>Washington D.C.</parameter> corresponding to request<failure>java.lang.AssertionError: 
+Expected: (a value equal to or greater than &quot;17.0&quot; and a value less than or equal to &quot;23.0&quot;)
+     but: a value less than or equal to &quot;23.0&quot; &quot;73&quot; was greater than &quot;23.0&quot;</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">And user click on selected country and new page with <parameter>Washington D.C.</parameter> opens</step>
+
+<example keyword="Example:">{capital=Riga, country=Latvia, zone=Europe}</example>
+<step outcome="successful">Given the user is on the Weather Forecast home page</step>
+<step outcome="successful">And user enters <parameter>Riga</parameter></step>
+<step outcome="successful">And dropdown is shown along with corresponding <parameter>Riga</parameter> and <parameter>Latvia</parameter></step>
+<step outcome="successful">When user selects capital</step>
+<step outcome="successful">Then corresponding page with <parameter>Riga</parameter> and <parameter>Latvia</parameter> opens</step>
+<cancelled keyword="STORY CANCELLED" durationKeyword="DURATION" durationInSecs="301"/>
 <failure>java.lang.AssertionError: 
-Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;)
-     but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;
+Expected: (a value equal to or greater than &quot;17.0&quot; and a value less than or equal to &quot;23.0&quot;)
+     but: a value less than or equal to &quot;23.0&quot; &quot;73&quot; was greater than &quot;23.0&quot;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.junit.Assert.assertThat(Assert.java:956)
 	at org.junit.Assert.assertThat(Assert.java:923)
-	at final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java:140)
+	at final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java:143)
 	at final_project.steps.serenity.EndUserSteps.compare_temperature_with_request(EndUserSteps.java:81)
-	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$c235b5f.CGLIB$compare_temperature_with_request$12(&lt;generated&gt;)
-	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$c235b5f$$FastClassByCGLIB$$ba78ac41.invoke(&lt;generated&gt;)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$3fc5215c.CGLIB$compare_temperature_with_request$12(&lt;generated&gt;)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$3fc5215c$$FastClassByCGLIB$$2afb32b3.invoke(&lt;generated&gt;)
 	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
 	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
 	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
 	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
-	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$c235b5f.compare_temperature_with_request(&lt;generated&gt;)
+	at final_project.steps.serenity.EndUserSteps$$EnhancerByCGLIB$$3fc5215c.compare_temperature_with_request(&lt;generated&gt;)
 	at final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:47)
 	(reflection-invoke)
 	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:595)

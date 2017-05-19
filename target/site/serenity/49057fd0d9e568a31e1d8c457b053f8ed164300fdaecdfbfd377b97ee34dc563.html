@@ -66,7 +66,7 @@
             <a href="2a4631d87648e59c428d4cf0e9247f9d286e4679f436ca2ce872e931eb4dfd58.html"><i class="fa fa-comments-o"></i> Stories</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 02-08-2016 23:50</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-05-2017 12:41</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -124,7 +124,7 @@
     <div class="story-title">
         <h3 class="story-header">Scenario:</h3>
 
-        <div class="scenario">Given the user is on the Weather Forecast home page<br>And user enters {London}<br>And dropdown is shown along with corresponding {London} and {United Kingdom}<br>When user selects capital<br>Then corresponding page with {London} and {United Kingdom} opens<br>And today temperature for ｟London｠ corresponding to request<br>And table with forecast for nearest three days included today for our {London} present</div>
+        <div class="scenario">Given the user is on the Weather Forecast home page<br>And user enters {Washington D.C.}<br>And dropdown is shown along with corresponding {Washington D.C.} and {United States}<br>When user selects capital<br>Then corresponding page with {Washington D.C.} and {United States} opens<br>And table with forecast for nearest three days included today for our {Washington D.C.} present<br>And today temperature for ｟Washington D.C.｠ corresponding to request<br>And user click on selected country and new page with {Washington D.C.} opens</div>
 
     </div>
 
@@ -139,13 +139,88 @@
                 <tr>
                         <th>Capital</th>
                         <th>Country</th>
+                        <th>Zone</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
-                            <td class="test-FAILURE"><a href="#0">London</a>
+                            <td class="test-FAILURE"><a href="#0">Washington D.C.</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">United Kingdom</a>
+                            <td class="test-FAILURE"><a href="#0">United States</a>
+                            </td>
+                            <td class="test-FAILURE"><a href="#0">U.S.A.</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-SUCCESS"><a href="#1">Riga</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">Latvia</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">Europe</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#2">Paris</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#2">France</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#2">Europe</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#3">Budapest</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#3">Hungary</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#3">Europe</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#4">Amsterdam</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#4">Netherlands</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#4">Europe</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#5">Sidney</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#5">Australia</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#5">Australia</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#6">Rome</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#6">Italy</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#6">Europe</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#7">Warsaw</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#7">Poland</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#7">Europe</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#8">London</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#8">United Kingdom</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#8">Europe</a>
+                            </td>
+                    </tr>
+                    <tr>
+                            <td class="test-UNDEFINED"><a href="#9">Copenhagen</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#9">Denmark</a>
+                            </td>
+                            <td class="test-UNDEFINED"><a href="#9">Europe</a>
                             </td>
                     </tr>
                 </tbody>
@@ -180,7 +255,7 @@
                         <div class="step-description">
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
-                            <span class="top-level-step">[1] {capital=London, country=United Kingdom}</span>
+                            <span class="top-level-step">[1] {capital=Washington D.C., country=United States, zone=U.S.A.}</span>
                             </a>
 
                         </div>
@@ -188,7 +263,7 @@
                         <td width="100" class="FAILURE-text">
                         </td>
                     <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">179,74s</span></td>
+                    <td width="100"><span class="top-level-step">229,36s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -209,7 +284,7 @@
                         <td width="100" class="SUCCESS-text">
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">102,33s</span></td>
+                    <td width="100"><span class="nested-step">67,5s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -226,14 +301,14 @@
                         <td width="100" class="SUCCESS-text">
                                 <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=0">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="fc893d8b4f639a0f2ca7fe167b8f76b5.png"
-                                         href="fc893d8b4f639a0f2ca7fe167b8f76b5.png"
+                                    <img src="ed869723ff88595ad3ecd36c5d332c88.png"
+                                         href="ed869723ff88595ad3ecd36c5d332c88.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">93,77s</span></td>
+                    <td width="100"><span class="nested-group-step">63,02s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -244,14 +319,14 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">And user enters {London}</span>
+                            <span class="nested-step">And user enters {Washington D.C.}</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">12,7s</span></td>
+                    <td width="100"><span class="nested-step">9,48s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -261,21 +336,21 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Enter city: <span class='step-parameter'>London</span></span>
+                            <span class="nested-group-step">Enter city: <span class='step-parameter'>Washington D.C.</span></span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=1">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="fc893d8b4f639a0f2ca7fe167b8f76b5.png"
-                                         href="fc893d8b4f639a0f2ca7fe167b8f76b5.png"
+                                    <img src="ed869723ff88595ad3ecd36c5d332c88.png"
+                                         href="ed869723ff88595ad3ecd36c5d332c88.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">6,01s</span></td>
+                    <td width="100"><span class="nested-group-step">3,75s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -286,14 +361,14 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">And dropdown is shown along with corresponding {London} and {United Kingdom}</span>
+                            <span class="nested-step">And dropdown is shown along with corresponding {Washington D.C.} and {United States}</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">7,09s</span></td>
+                    <td width="100"><span class="nested-step">7,17s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -303,21 +378,21 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Check dropdown list: <span class='step-parameter'>London, United Kingdom</span></span>
+                            <span class="nested-group-step">Check dropdown list: <span class='step-parameter'>Washington D.C., United States</span></span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=3">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="5ab0799ef9c3fecc71f85169c7586751.png"
-                                         href="5ab0799ef9c3fecc71f85169c7586751.png"
+                                    <img src="7d3fcc15458d2f65bddd23f342fc5846.png"
+                                         href="7d3fcc15458d2f65bddd23f342fc5846.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">3,65s</span></td>
+                    <td width="100"><span class="nested-group-step">3,6s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -335,7 +410,7 @@
                         <td width="100" class="SUCCESS-text">
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">22,56s</span></td>
+                    <td width="100"><span class="nested-step">53,03s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -352,14 +427,14 @@
                         <td width="100" class="SUCCESS-text">
                                 <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=5">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="d61518bdff0c16b7a2f2b530220af3d2.png"
-                                         href="d61518bdff0c16b7a2f2b530220af3d2.png"
+                                    <img src="91c213d3f249a7f8a9ef3624babbdbe2.png"
+                                         href="91c213d3f249a7f8a9ef3624babbdbe2.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">17,47s</span></td>
+                    <td width="100"><span class="nested-group-step">45,32s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -370,14 +445,14 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">Then corresponding page with {London} and {United Kingdom} opens</span>
+                            <span class="nested-step">Then corresponding page with {Washington D.C.} and {United States} opens</span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">21,62s</span></td>
+                    <td width="100"><span class="nested-step">35,03s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -387,21 +462,63 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Check page open: <span class='step-parameter'>London, United Kingdom</span></span>
+                            <span class="nested-group-step">Check page open: <span class='step-parameter'>Washington D.C., United States</span></span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
                                 <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=7">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="34b1704ea1f6e5923a183404cc3ff27d.png"
-                                         href="34b1704ea1f6e5923a183404cc3ff27d.png"
+                                    <img src="b59fa4a8ddcf57f5a4afbf9f978c13d1.png"
+                                         href="b59fa4a8ddcf57f5a4afbf9f978c13d1.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">13,71s</span></td>
+                    <td width="100"><span class="nested-group-step">28,55s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And table with forecast for nearest three days included today for our {Washington D.C.} present</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">17,61s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Forecats for three days: <span class='step-parameter'>U.S.A., Washington D.C.</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=9">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="d5882c5fc2f564ffd04d10bc34f80d01.png"
+                                         href="d5882c5fc2f564ffd04d10bc34f80d01.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">11,23s</span></td>
                 </tr>
 
                 <tr class="test-FAILURE">
@@ -412,14 +529,14 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-step">And today temperature for ｟London｠ corresponding to request</span>
+                            <span class="nested-step">And today temperature for ｟Washington D.C.｠ corresponding to request</span>
 
                         </div>
                     </td>
                         <td width="100" class="FAILURE-text">
                         </td>
                     <td width="100"><span class="nested-step">FAILURE</span></td>
-                    <td width="100"><span class="nested-step">13,14s</span></td>
+                    <td width="100"><span class="nested-step">39,31s</span></td>
                 </tr>
                 <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
@@ -429,27 +546,27 @@
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">Compare temperature with request: <span class='step-parameter'>London</span></span>
+                            <span class="nested-group-step">Compare temperature with request: <span class='step-parameter'>Washington D.C.</span></span>
 
                         </div>
                     </td>
                         <td width="100" class="FAILURE-text">
-                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=9">
+                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=11">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="6b9946f315dc303228f558c61455983c.png"
-                                         href="6b9946f315dc303228f558c61455983c.png"
+                                    <img src="40c82db7b8e2b64571c3ae8d362baef5.png"
+                                         href="40c82db7b8e2b64571c3ae8d362baef5.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">FAILURE</span></td>
-                    <td width="100"><span class="nested-group-step">10,12s</span></td>
+                    <td width="100"><span class="nested-group-step">36,22s</span></td>
                 </tr>
                     <tr class="test-FAILURE">
                         <td width="40">&nbsp</td>
                         <td width="%" colspan="4" class="error-message-cell">
                             <span class="error-message ellipsis"
-                                  title='Assertion error: Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;) but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;'><pre>Assertion error: Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;) but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;</pre></span>
+                                  title='Assertion error: Expected: (a value equal to or greater than &quot;17.0&quot; and a value less than or equal to &quot;23.0&quot;) but: a value less than or equal to &quot;23.0&quot; &quot;73&quot; was greater than &quot;23.0&quot;'><pre>Assertion error: Expected: (a value equal to or greater than &quot;17.0&quot; and a value less than or equal to &quot;23.0&quot;) but: a value less than or equal to &quot;23.0&quot; &quot;73&quot; was greater than &quot;23.0&quot;</pre></span>
                 <div><!-- Stack trace -->
                     <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
                             data-target="#stacktraceModal">
@@ -471,10 +588,10 @@
                             </div>
                             <div class="modal-body">
                                 <h4>
-Expected: (a value equal to or greater than "18.0" and a value less than or equal to "20.0")
-     but: a value equal to or greater than "18.0" "18" was less than "18.0"</h4>
+Expected: (a value equal to or greater than "17.0" and a value less than or equal to "23.0")
+     but: a value less than or equal to "23.0" "73" was greater than "23.0"</h4>
                                 final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java
-                                    :140)
+                                    :143)
                                 final_project.steps.serenity.EndUserSteps.compare_temperature_with_request(EndUserSteps.java
                                     :81)
                                 final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java
@@ -499,7 +616,7 @@ Expected: (a value equal to or greater than "18.0" and a value less than or equa
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">And table with forecast for nearest three days included today for our {London} present</span>
+                            <span class="nested-group-step">And user click on selected country and new page with {Washington D.C.} opens</span>
 
                         </div>
                     </td>
@@ -512,10 +629,249 @@ Expected: (a value equal to or greater than "18.0" and a value less than or equa
                     </table>
                     </td>
                     <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="1"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')" style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon" style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
+                            <span class="top-level-step">[2] {capital=Riga, country=Latvia, zone=Europe}</span>
+                            </a>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Given the user is on the Weather Forecast home page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">17,32s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Open weather page</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=13">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="b64ec69593ac7bb26d6ff41c4961b54e.png"
+                                         href="b64ec69593ac7bb26d6ff41c4961b54e.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">12,89s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And user enters {Riga}</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">8,08s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Enter city: <span class='step-parameter'>Riga</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=15">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="0aba547b7a26844f68b7df5bbb46593d.png"
+                                         href="0aba547b7a26844f68b7df5bbb46593d.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">4,5s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">And dropdown is shown along with corresponding {Riga} and {Latvia}</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">7,61s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Check dropdown list: <span class='step-parameter'>Riga, Latvia</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=17">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="078518e8eb9ca846a5e994975dca1e39.png"
+                                         href="078518e8eb9ca846a5e994975dca1e39.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">3,74s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">When user selects capital</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">12,08s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Search capital</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=19">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="3e7b83aa2239ccfa55a2a78244217c79.png"
+                                         href="3e7b83aa2239ccfa55a2a78244217c79.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">8,32s</span></td>
+                </tr>
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-step">Then corresponding page with {Riga} and {Latvia} opens</span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">25,46s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">Check page open: <span class='step-parameter'>Riga, Latvia</span></span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="49057fd0d9e568a31e1d8c457b053f8ed164300fdaecdfbfd377b97ee34dc563_screenshots.html#screenshots?screenshot=21">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="70e68dd9ceb6f848ea6f7b5de682a68a.png"
+                                         href="70e68dd9ceb6f848ea6f7b5de682a68a.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">20,74s</span></td>
+                </tr>
+
+
+                    </table>
+                    </td>
+                    <tr>
                 <tr class="test-FAILURE">
                         <td colspan="3"></td>
                     <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>181,44s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>304,68s</em></span></td>
                 </tr>
 
             </table>

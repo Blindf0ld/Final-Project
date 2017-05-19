@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Check weather in specific city" skipped="0" tests="1" time="181.44" timestamp="2016-08-215 11:47:32"><testcase name="checking weather in capitals"><failure message="&#10;Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;)&#10;     but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;" type="java.lang.AssertionError">
-Expected: (a value equal to or greater than "18.0" and a value less than or equal to "20.0")
-     but: a value equal to or greater than "18.0" "18" was less than "18.0"</failure><system-err>
-Expected: (a value equal to or greater than "18.0" and a value less than or equal to "20.0")
-     but: a value equal to or greater than "18.0" "18" was less than "18.0"&#13;
-final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java:140)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Check weather in specific city" skipped="8" tests="10" time="304.68" timestamp="2017-05-139 12:35:39"><testcase name="checking weather in capitals"><failure message="&#10;Expected: (a value equal to or greater than &quot;17.0&quot; and a value less than or equal to &quot;23.0&quot;)&#10;     but: a value less than or equal to &quot;23.0&quot; &quot;73&quot; was greater than &quot;23.0&quot;" type="java.lang.AssertionError">
+Expected: (a value equal to or greater than "17.0" and a value less than or equal to "23.0")
+     but: a value less than or equal to "23.0" "73" was greater than "23.0"</failure><system-err>
+Expected: (a value equal to or greater than "17.0" and a value less than or equal to "23.0")
+     but: a value less than or equal to "23.0" "73" was greater than "23.0"&#13;
+final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java:143)&#13;
 final_project.steps.serenity.EndUserSteps.compare_temperature_with_request(EndUserSteps.java:81)&#13;
 final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:47)&#13;
 </system-err></testcase></testsuite>

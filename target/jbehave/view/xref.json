@@ -1,5 +1,5 @@
 {"xref": {
-  "whenMade": 1470171041206,
+  "whenMade": 1495186878114,
   "createdBy": "JBehave",
   "metaFilter": "-ignore",
   "meta": [],
@@ -11,11 +11,11 @@
       "path": "stories/check_weather/CheckWeatherInSpecificCity.story",
       "html": "stories.check_weather.CheckWeatherInSpecificCity.html",
       "meta": "",
-      "scenarios": "Scenario:checking weather in capitals\nGiven the user is on the Weather Forecast home page\nAnd user enters <capital>\nAnd dropdown is shown along with corresponding <capital> and <country>\nWhen user selects capital\nThen corresponding page with <capital> and <country> opens\nAnd today temperature for <capital> corresponding to request\nAnd table with forecast for nearest three days included today for our <capital> present\n\n\n",
+      "scenarios": "Scenario:checking weather in capitals\nGiven the user is on the Weather Forecast home page\nAnd user enters <capital>\nAnd dropdown is shown along with corresponding <capital> and <country>\nWhen user selects capital\nThen corresponding page with <capital> and <country> opens\nAnd table with forecast for nearest three days included today for our <capital> present\nAnd today temperature for <capital> corresponding to request\nAnd user click on selected country and new page with <capital> opens\n\n\n",
       "passed": false,
       "pending": false,
-      "started": 1470170852276,
-      "duration": 181979
+      "started": 1495186538974,
+      "duration": 307289
     }
   ],
   "stepMatches": []

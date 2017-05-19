@@ -1,4 +1,4 @@
-<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="7" successful="5" failures="1" skipped="1" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="181438" timestamp="2016-08-02T23:47:32.576+03:00" session-id="44600eab-d825-44a4-a0fa-b02ab9da8b75">
+<acceptance-test-run title="checking weather in capitals" name="checking weather in capitals" steps="13" successful="11" failures="1" skipped="1" ignored="0" pending="0" result="FAILURE" duration="304675" timestamp="2017-05-19T12:35:39.352+03:00" session-id="9816b332-e216-43bd-8562-a203c641e27c">
   <user-story id="CheckWeatherInSpecificCity" name="Check weather in specific city" path="stories/check_weather/CheckWeatherInSpecificCity.story"/>
   <tags>
     <tag name="Check weather" type="feature"/>
@@ -11,99 +11,229 @@
     <headers>
       <header>capital</header>
       <header>country</header>
+      <header>zone</header>
     </headers>
     <rows>
       <row result="FAILURE">
+        <value>Washington D.C.</value>
+        <value>United States</value>
+        <value>U.S.A.</value>
+      </row>
+      <row result="SUCCESS">
+        <value>Riga</value>
+        <value>Latvia</value>
+        <value>Europe</value>
+      </row>
+      <row>
+        <value>Paris</value>
+        <value>France</value>
+        <value>Europe</value>
+      </row>
+      <row>
+        <value>Budapest</value>
+        <value>Hungary</value>
+        <value>Europe</value>
+      </row>
+      <row>
+        <value>Amsterdam</value>
+        <value>Netherlands</value>
+        <value>Europe</value>
+      </row>
+      <row>
+        <value>Sidney</value>
+        <value>Australia</value>
+        <value>Australia</value>
+      </row>
+      <row>
+        <value>Rome</value>
+        <value>Italy</value>
+        <value>Europe</value>
+      </row>
+      <row>
+        <value>Warsaw</value>
+        <value>Poland</value>
+        <value>Europe</value>
+      </row>
+      <row>
         <value>London</value>
         <value>United Kingdom</value>
+        <value>Europe</value>
+      </row>
+      <row>
+        <value>Copenhagen</value>
+        <value>Denmark</value>
+        <value>Europe</value>
       </row>
     </rows>
   </examples>
-  <test-group name="[1] {capital=London, country=United Kingdom}" result="FAILURE">
+  <test-group name="[1] {capital=Washington D.C., country=United States, zone=U.S.A.}" result="FAILURE">
     <test-group name="Given the user is on the Weather Forecast home page" result="SUCCESS">
       <screenshots>
-        <screenshot image="fc893d8b4f639a0f2ca7fe167b8f76b5.png"/>
+        <screenshot image="ed869723ff88595ad3ecd36c5d332c88.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="93770">
+      <test-step result="SUCCESS" duration="63017">
         <screenshots>
-          <screenshot image="fc893d8b4f639a0f2ca7fe167b8f76b5.png"/>
+          <screenshot image="ed869723ff88595ad3ecd36c5d332c88.png"/>
         </screenshots>
         <description>Open weather page</description>
       </test-step>
     </test-group>
-    <test-group name="And user enters {London}" result="SUCCESS">
+    <test-group name="And user enters {Washington D.C.}" result="SUCCESS">
       <screenshots>
-        <screenshot image="fc893d8b4f639a0f2ca7fe167b8f76b5.png"/>
-        <screenshot image="53ae5fb1ca20d1f9e808b2280515fc10.png"/>
+        <screenshot image="ed869723ff88595ad3ecd36c5d332c88.png"/>
+        <screenshot image="7d3fcc15458d2f65bddd23f342fc5846.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="6008">
+      <test-step result="SUCCESS" duration="3748">
         <screenshots>
-          <screenshot image="fc893d8b4f639a0f2ca7fe167b8f76b5.png"/>
-          <screenshot image="5b8a5cdf0db9589abbd19efd2b1ca909.png"/>
+          <screenshot image="ed869723ff88595ad3ecd36c5d332c88.png"/>
+          <screenshot image="078153f591e768080aee9e0a230e9797.png"/>
         </screenshots>
-        <description>Enter city: &lt;span class=&apos;step-parameter&apos;&gt;London&lt;/span&gt;</description>
+        <description>Enter city: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C.&lt;/span&gt;</description>
       </test-step>
     </test-group>
-    <test-group name="And dropdown is shown along with corresponding {London} and {United Kingdom}" result="SUCCESS">
+    <test-group name="And dropdown is shown along with corresponding {Washington D.C.} and {United States}" result="SUCCESS">
       <screenshots>
-        <screenshot image="5ab0799ef9c3fecc71f85169c7586751.png"/>
-        <screenshot image="d61518bdff0c16b7a2f2b530220af3d2.png"/>
+        <screenshot image="7d3fcc15458d2f65bddd23f342fc5846.png"/>
+        <screenshot image="91c213d3f249a7f8a9ef3624babbdbe2.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="3649">
+      <test-step result="SUCCESS" duration="3602">
         <screenshots>
-          <screenshot image="5ab0799ef9c3fecc71f85169c7586751.png"/>
-          <screenshot image="d61518bdff0c16b7a2f2b530220af3d2.png"/>
+          <screenshot image="7d3fcc15458d2f65bddd23f342fc5846.png"/>
+          <screenshot image="91c213d3f249a7f8a9ef3624babbdbe2.png"/>
         </screenshots>
-        <description>Check dropdown list: &lt;span class=&apos;step-parameter&apos;&gt;London, United Kingdom&lt;/span&gt;</description>
+        <description>Check dropdown list: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C., United States&lt;/span&gt;</description>
       </test-step>
     </test-group>
     <test-group name="When user selects capital" result="SUCCESS">
       <screenshots>
-        <screenshot image="d61518bdff0c16b7a2f2b530220af3d2.png"/>
-        <screenshot image="d8bd630988bfa8a9a05d2f26654c7a99.png"/>
+        <screenshot image="91c213d3f249a7f8a9ef3624babbdbe2.png"/>
+        <screenshot image="4eb04b89d48aec51cb18253e00fcfc14.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="17471">
+      <test-step result="SUCCESS" duration="45320">
         <screenshots>
-          <screenshot image="d61518bdff0c16b7a2f2b530220af3d2.png"/>
-          <screenshot image="94f95c8963564650ae0354dc1ea97cad.png"/>
+          <screenshot image="91c213d3f249a7f8a9ef3624babbdbe2.png"/>
+          <screenshot image="dd0499a673229a315c1d61bd1ced7871.png"/>
         </screenshots>
         <description>Search capital</description>
       </test-step>
     </test-group>
-    <test-group name="Then corresponding page with {London} and {United Kingdom} opens" result="SUCCESS">
+    <test-group name="Then corresponding page with {Washington D.C.} and {United States} opens" result="SUCCESS">
       <screenshots>
-        <screenshot image="c8eaeb3da87a1c4626be7842a6ec0bd7.png"/>
-        <screenshot image="ffcdc904ca5d230235d6bfe4c3ce58b6.png"/>
+        <screenshot image="66f635a6ea9d55ca1ca84f0137a0079b.png"/>
+        <screenshot image="12935e29f9789d3b30d1ba1410f22fd1.png"/>
       </screenshots>
-      <test-step result="SUCCESS" duration="13708">
+      <test-step result="SUCCESS" duration="28549">
         <screenshots>
-          <screenshot image="34b1704ea1f6e5923a183404cc3ff27d.png"/>
-          <screenshot image="206c62876f9758bb684f248133d21b4b.png"/>
+          <screenshot image="b59fa4a8ddcf57f5a4afbf9f978c13d1.png"/>
+          <screenshot image="3af97b5a6e53705c918184c0197593b7.png"/>
         </screenshots>
-        <description>Check page open: &lt;span class=&apos;step-parameter&apos;&gt;London, United Kingdom&lt;/span&gt;</description>
+        <description>Check page open: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C., United States&lt;/span&gt;</description>
       </test-step>
     </test-group>
-    <test-group name="And today temperature for ｟London｠ corresponding to request" result="FAILURE">
+    <test-group name="And table with forecast for nearest three days included today for our {Washington D.C.} present" result="SUCCESS">
       <screenshots>
-        <screenshot image="5efc3828864eef2a269af2ebaae88481.png"/>
+        <screenshot image="0701d8145f22b55120a55d23ceacdfaf.png"/>
+        <screenshot image="44ed930b8269b715fc8c9475a78f1f3f.png"/>
       </screenshots>
-      <test-step result="FAILURE" duration="10118">
+      <test-step result="SUCCESS" duration="11229">
         <screenshots>
-          <screenshot image="6b9946f315dc303228f558c61455983c.png"/>
-          <screenshot image="f931a64dd4226f36c9ad076527e7b45d.png" source="pagesource328454192739460064.html.txt"/>
+          <screenshot image="d5882c5fc2f564ffd04d10bc34f80d01.png"/>
+          <screenshot image="c5510628d4ba9daf111e5f7aef740ca8.png"/>
         </screenshots>
-        <description>Compare temperature with request: &lt;span class=&apos;step-parameter&apos;&gt;London&lt;/span&gt;</description>
+        <description>Forecats for three days: &lt;span class=&apos;step-parameter&apos;&gt;U.S.A., Washington D.C.&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And today temperature for ｟Washington D.C.｠ corresponding to request" result="FAILURE">
+      <screenshots>
+        <screenshot image="bd3d6cd9ccf9e8377849d3a275342bfa.png"/>
+      </screenshots>
+      <test-step result="FAILURE" duration="36223">
+        <screenshots>
+          <screenshot image="40c82db7b8e2b64571c3ae8d362baef5.png"/>
+          <screenshot image="464b8935aa8199b7d591f55016647028.png" source="pagesource1902504195420785013.html.txt"/>
+        </screenshots>
+        <description>Compare temperature with request: &lt;span class=&apos;step-parameter&apos;&gt;Washington D.C.&lt;/span&gt;</description>
         <error>java.lang.AssertionError: 
-Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;)
-     but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;</error>
+Expected: (a value equal to or greater than &quot;17.0&quot; and a value less than or equal to &quot;23.0&quot;)
+     but: a value less than or equal to &quot;23.0&quot; &quot;73&quot; was greater than &quot;23.0&quot;</error>
         <exception>java.lang.AssertionError:
-Expected: (a value equal to or greater than &quot;18.0&quot; and a value less than or equal to &quot;20.0&quot;)
-     but: a value equal to or greater than &quot;18.0&quot; &quot;18&quot; was less than &quot;18.0&quot;&#xd;
-[final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java:140), final_project.steps.serenity.EndUserSteps.compare_temperature_with_request(EndUserSteps.java:81), final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:47)]</exception>
+Expected: (a value equal to or greater than &quot;17.0&quot; and a value less than or equal to &quot;23.0&quot;)
+     but: a value less than or equal to &quot;23.0&quot; &quot;73&quot; was greater than &quot;23.0&quot;&#xd;
+[final_project.pages.SearchWeatherPage.check_temperature_in_table_C(SearchWeatherPage.java:143), final_project.steps.serenity.EndUserSteps.compare_temperature_with_request(EndUserSteps.java:81), final_project.steps.SearchWeatherSteps.forecastRequestChecking(SearchWeatherSteps.java:47)]</exception>
       </test-step>
     </test-group>
     <test-step result="SKIPPED" duration="1">
-      <description>And table with forecast for nearest three days included today for our {London} present</description>
+      <description>And user click on selected country and new page with {Washington D.C.} opens</description>
     </test-step>
+  </test-group>
+  <test-group name="[2] {capital=Riga, country=Latvia, zone=Europe}" result="SUCCESS">
+    <screenshots>
+      <screenshot image="86ed10fcf27d60e8c39af9a1dc497f10.png"/>
+    </screenshots>
+    <test-group name="Given the user is on the Weather Forecast home page" result="SUCCESS">
+      <screenshots>
+        <screenshot image="0625131078d94c7e83f9a8f6d5baf3e3.png"/>
+        <screenshot image="dc1fc7fd349294b1281cf3bf9591eb4a.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="12894">
+        <screenshots>
+          <screenshot image="b64ec69593ac7bb26d6ff41c4961b54e.png"/>
+          <screenshot image="a2d647d0d9bf6389e1024ab695380e30.png"/>
+        </screenshots>
+        <description>Open weather page</description>
+      </test-step>
+    </test-group>
+    <test-group name="And user enters {Riga}" result="SUCCESS">
+      <screenshots>
+        <screenshot image="61f94f5d1f557d90413d15796aefd17e.png"/>
+        <screenshot image="bb34d32d2f49a3f13920682ba05e8680.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="4500">
+        <screenshots>
+          <screenshot image="0aba547b7a26844f68b7df5bbb46593d.png"/>
+          <screenshot image="2c233c9a7e631470c128fc7efd7f8886.png"/>
+        </screenshots>
+        <description>Enter city: &lt;span class=&apos;step-parameter&apos;&gt;Riga&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="And dropdown is shown along with corresponding {Riga} and {Latvia}" result="SUCCESS">
+      <screenshots>
+        <screenshot image="77b1c642657154846e66352a1a3f9963.png"/>
+        <screenshot image="b6dbddcfcb3bd25a1970c697e5cfeb57.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="3738">
+        <screenshots>
+          <screenshot image="078518e8eb9ca846a5e994975dca1e39.png"/>
+          <screenshot image="73b455c95a28909568600e0f44c5197e.png"/>
+        </screenshots>
+        <description>Check dropdown list: &lt;span class=&apos;step-parameter&apos;&gt;Riga, Latvia&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
+    <test-group name="When user selects capital" result="SUCCESS">
+      <screenshots>
+        <screenshot image="47813b5e4ce85cd7f9a6177dbe55c1a3.png"/>
+        <screenshot image="d589ab22804f065d43966c3459bbe1c6.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="8315">
+        <screenshots>
+          <screenshot image="3e7b83aa2239ccfa55a2a78244217c79.png"/>
+          <screenshot image="68ce357c551d499abbb49b2a60b7b66b.png"/>
+        </screenshots>
+        <description>Search capital</description>
+      </test-step>
+    </test-group>
+    <test-group name="Then corresponding page with {Riga} and {Latvia} opens" result="SUCCESS">
+      <screenshots>
+        <screenshot image="88d2058339ac91a3e9463e51a090dc36.png"/>
+        <screenshot image="9c2a311647314d9de0249230d224a45f.png"/>
+      </screenshots>
+      <test-step result="SUCCESS" duration="20738">
+        <screenshots>
+          <screenshot image="70e68dd9ceb6f848ea6f7b5de682a68a.png"/>
+          <screenshot image="4b7a9fc1cbad2064c63e3111448e3860.png"/>
+        </screenshots>
+        <description>Check page open: &lt;span class=&apos;step-parameter&apos;&gt;Riga, Latvia&lt;/span&gt;</description>
+      </test-step>
+    </test-group>
   </test-group>
 </acceptance-test-run>
